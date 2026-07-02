@@ -1,0 +1,63 @@
+---
+description: React Query hook conventions and patterns
+globs: src/lib/hooks/**/*.js
+alwaysApply: false
+---
+
+# React Query Hook Conventions
+
+## Hook File Structure
+
+Each hook file in `src/lib/hooks/` contains one exported hook function.
+
+```js
+import { useQuery } from '@tanstack/react-query';
+import http from '../axios';
+
+export default function useExample(param, options = {}) {
+  return useQuery({
+    queryKey: ['example', param],
+    queryFn: ({ signal }) => http.get(`/endpoint/${param}/`, { signal }),
+    enabled: !!param,
+    ...options,
+  });
+}
+```
+
+## Rules
+
+1. **One hook per file**, default export, named `use[Feature]`
+2. **queryKey** must be a descriptive array: `['entity', ...params]`
+3. **Always pass `enabled`** to guard against undefined params
+4. **Always pass `{ signal }`** to `http.get()` for automatic request cancellation
+5. **Accept `options = {}`** as last param — spread into useQuery for caller flexibility (e.g. `select`, `staleTime`)
+6. **Return the full useQuery result** — let the consumer pick what they need
+7. **Never import `http` in components** — it's internal to hooks only
+8. **Data transforms** use `select` option when needed:
+
+```js
+export default function useFilteredData(name) {
+  return usePageData(name, {
+    select: data => data.filter(item => item.active),
+  });
+}
+```
+
+## Composing Hooks
+
+Build specific hooks on top of generic ones:
+
+```js
+import usePageData from './usePageData';
+
+export default function useDepartmentPage(department, slug) {
+  const name = department && slug ? `${department}-${slug}` : department || null;
+  return usePageData(name);
+}
+```
+
+## Error Handling
+
+- `HttpService` interceptors throw `ApiError` on failure — react-query catches it automatically
+- Pages access `error` from the hook and pass `refetch` to `MinimalError`
+- Do NOT add try/catch inside queryFn — let react-query handle retries (2 retries with exponential backoff)

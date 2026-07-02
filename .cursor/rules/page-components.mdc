@@ -1,0 +1,48 @@
+---
+description: Page component patterns with CSR, loading, and error handling
+globs: src/app/**/page.jsx
+alwaysApply: false
+---
+
+# Page Component Patterns
+
+## CSR Page Template
+
+Every page that fetches data follows this pattern:
+
+```jsx
+'use client';
+
+import { useParams } from 'next/navigation';
+import MinimalError from '@/components/Error/MinimalError';
+import PageSkeleton from '@/components/Skeleton/PageSkeleton';
+import useMyHook from '@/lib/hooks/useMyHook';
+
+export default function MyPage() {
+  const { slug } = useParams();
+  const { data, isLoading, error, refetch } = useMyHook(slug);
+
+  if (isLoading) return <PageSkeleton />;
+  if (error) return <MinimalError onRetry={refetch} />;
+  if (!data) return <NotFoundPage />;
+
+  return <div className="h-full flex flex-col">{/* Render content */}</div>;
+}
+```
+
+## Rules
+
+1. **Always `'use client'`** at the top
+2. **State order**: loading → error → empty/not-found → success
+3. **Never use `useEffect` + `useState` for data fetching** — use react-query hooks
+4. **Never import `api()` directly** — use hooks from `src/lib/hooks/`
+5. **Always provide retry** via `<MinimalError onRetry={refetch} />`
+6. **Use `PageSkeleton`** for loading state on all pages
+7. **Get route params** from `useParams()` (next/navigation), not from component props
+
+## shadcn/ui Usage
+
+- Import from `@/components/ui/[component]`
+- Use `cn()` from `@/lib/utils` for conditional classes
+- Prefer shadcn Button over custom buttons
+- Use Card for content sections, Accordion for collapsible content

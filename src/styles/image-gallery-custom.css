@@ -1,0 +1,97 @@
+/* ─── DisplayImage legacy (keep for backward compat) ─── */
+.custom-gallery .image-gallery-slide img {
+  max-height: 60vh !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+.custom-gallery .image-gallery-content {
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.custom-gallery .image-gallery-slide {
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.custom-gallery .image-gallery-slides {
+  height: 100% !important;
+}
+
+/* ─── Post page gallery ────────────────────────────────── */
+.post-gallery .image-gallery-slide img {
+  max-height: 480px;
+  width: 100%;
+  object-fit: contain;
+  background: hsl(0 0% 3.9%);
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+
+.post-gallery .image-gallery-content {
+  background: transparent;
+}
+
+.post-gallery .image-gallery-description {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+  bottom: 0;
+  padding: 1rem 1.5rem;
+  font-size: 0.875rem;
+}
+
+/* Thumbnails strip */
+.post-gallery .image-gallery-thumbnails-wrapper {
+  padding: 0.75rem 0.5rem;
+}
+
+.post-gallery .image-gallery-thumbnail {
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  width: 80px;
+  height: 56px;
+  margin: 0 4px;
+  transition: all 0.2s ease;
+  opacity: 0.6;
+}
+
+.post-gallery .image-gallery-thumbnail.active,
+.post-gallery .image-gallery-thumbnail:hover {
+  border-color: hsl(var(--primary));
+  opacity: 1;
+}
+
+.post-gallery .image-gallery-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hide default nav arrows (replaced by custom React components) */
+.post-gallery .image-gallery-left-nav,
+.post-gallery .image-gallery-right-nav {
+  display: none;
+}
+
+/* Fullscreen button */
+.post-gallery .image-gallery-fullscreen-button {
+  bottom: 1rem;
+  right: 1rem;
+  padding: 0.5rem;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
+}
+
+.post-gallery .image-gallery-fullscreen-button:hover {
+  color: hsl(var(--primary));
+}
+
+.post-gallery.fullscreen-modal .image-gallery-slide img {
+  max-height: 90vh;
+  border-radius: 0;
+}

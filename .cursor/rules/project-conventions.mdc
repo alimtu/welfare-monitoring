@@ -1,0 +1,106 @@
+---
+description: Core project conventions - CSR with React Query, Tailwind, and shadcn/ui
+alwaysApply: true
+---
+
+# Project Conventions
+
+## Tech Stack
+
+- **Framework**: Next.js 15 (App Router)
+- **Rendering**: CSR (Client-Side Rendering) — all data-fetching pages use `'use client'`
+- **Data Fetching**: TanStack React Query v5 via custom hooks — **no direct HTTP calls in components**
+- **HTTP Client**: `HttpService` class in `src/lib/axios/index.js` (internal, never imported by components)
+- **Styling**: Tailwind CSS v4
+- **UI Components**: shadcn/ui (new-york style, lucide icons)
+- **Language**: RTL (Persian/Farsi), `dir="rtl"`, `lang="fa"`
+
+## Data Fetching Architecture
+
+```
+Pages → hooks (src/lib/hooks/) → react-query → HttpService (axios) → server
+```
+
+All API responses follow this structure:
+
+```json
+{ "status": "success", "data": { ... }, "statusCode": 200 }
+```
+
+`HttpService` response interceptor validates and unwraps the envelope — hooks receive `data` directly. Components **never** import `http` — they use hooks.
+
+### Creating a Hook
+
+```js
+// src/lib/hooks/useMyData.js
+import { useQuery } from '@tanstack/react-query';
+import http from '../axios';
+
+export default function useMyData(param, options = {}) {
+  return useQuery({
+    queryKey: ['my-data', param],
+    queryFn: ({ signal }) => http.get(`/endpoint/${param}/`, { signal }),
+    enabled: !!param,
+    ...options,
+  });
+}
+```
+
+### Composing Hooks
+
+```js
+import usePageData from './usePageData';
+
+export default function useDashboard() {
+  return usePageData('dashboard');
+}
+```
+
+### Using in a Page
+
+```jsx
+'use client';
+import MinimalError from '@/components/Error/MinimalError';
+import PageSkeleton from '@/components/Skeleton/PageSkeleton';
+import useMyData from '@/lib/hooks/useMyData';
+
+export default function MyPage() {
+  const { data, isLoading, error, refetch } = useMyData('param');
+
+  if (isLoading) return <PageSkeleton />;
+  if (error) return <MinimalError onRetry={refetch} />;
+
+  return <div>{/* render data */}</div>;
+}
+```
+
+## Key Hooks
+
+| Hook                             | Purpose                              | Endpoint                             |
+| -------------------------------- | ------------------------------------ | ------------------------------------ |
+| `usePageData(name)`              | Generic page data                    | `/data/?name={name}&size=1`          |
+| `usePost(slug)`                  | Single post by slug                  | `/post/{slug}/`                      |
+| `useDashboard()`                 | Home page (wraps usePageData)        | `/data/?name=dashboard&size=1`       |
+| `useDepartmentPage(dept, slug?)` | Department pages (wraps usePageData) | `/data/?name={dept}[-{slug}]&size=1` |
+
+## React Query Performance
+
+- `staleTime: 10 min` — data considered fresh, no refetch
+- `gcTime: 15 min` — inactive cache kept in memory
+- `retry: 2` — failed queries retry twice with exponential backoff
+- `refetchOnWindowFocus: true` — stale data refreshes when tab regains focus
+- `signal` — always pass `{ signal }` in queryFn for request cancellation on unmount
+
+## Page Structure Rules
+
+1. Every data-fetching page must be `'use client'`
+2. Always destructure `{ data, isLoading, error, refetch }` from hooks
+3. State order: **loading** → skeleton, **error** → MinimalError with retry, **empty** → not found, **success** → render
+4. Use `PageSkeleton` for loading state on all pages
+
+## Component Guidelines
+
+- Use shadcn/ui components from `src/components/ui/` (Button, Card, Input, etc.)
+- Import shadcn utils: `import { cn } from '@/lib/utils'`
+- Use `lucide-react` for icons
+- Tailwind v4 syntax: use `bg-linear-to-br` instead of `bg-gradient-to-br`

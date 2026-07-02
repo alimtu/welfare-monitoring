@@ -1,0 +1,40 @@
+{
+  "any.required": "{#label} الزامی است",
+  "any.empty": "{#label} نمی‌تواند خالی باشد",
+  "any.invalid": "مقدار {#label} نامعتبر است",
+  "any.only": "{#label} باید یکی از مقادیر مجاز باشد",
+  "any.unknown": "{#label} مجاز نیست",
+
+  "string.base": "{#label} باید متن باشد",
+  "string.empty": "{#label} الزامی است",
+  "string.min": "{#label} باید حداقل {#limit} کاراکتر باشد",
+  "string.max": "{#label} باید حداکثر {#limit} کاراکتر باشد",
+  "string.length": "{#label} باید دقیقاً {#limit} کاراکتر باشد",
+  "string.email": "{#label} باید یک ایمیل معتبر باشد",
+  "string.uri": "{#label} باید یک آدرس معتبر باشد",
+  "string.pattern.base": "{#label} فرمت نامعتبری دارد",
+  "string.trim": "{#label} نباید فاصله اضافی داشته باشد",
+
+  "number.base": "{#label} باید عدد باشد",
+  "number.min": "{#label} باید حداقل {#limit} باشد",
+  "number.max": "{#label} باید حداکثر {#limit} باشد",
+  "number.integer": "{#label} باید عدد صحیح باشد",
+  "number.positive": "{#label} باید عدد مثبت باشد",
+  "number.negative": "{#label} باید عدد منفی باشد",
+
+  "array.base": "{#label} باید لیست باشد",
+  "array.min": "حداقل {#limit} گزینه برای {#label} انتخاب کنید",
+  "array.max": "حداکثر {#limit} گزینه برای {#label} مجاز است",
+  "array.includesRequiredUnknowns": "{#label} شامل مقادیر الزامی نیست",
+
+  "object.base": "{#label} نامعتبر است",
+  "object.unknown": "{#label} شامل فیلد غیرمجاز است",
+
+  "date.base": "{#label} باید تاریخ معتبر باشد",
+  "date.min": "{#label} باید بعد از {#limit} باشد",
+  "date.max": "{#label} باید قبل از {#limit} باشد",
+
+  "boolean.base": "{#label} باید بله یا خیر باشد",
+
+  "alternatives.match": "{#label} با هیچ‌کدام از فرمت‌های مجاز مطابقت ندارد"
+}

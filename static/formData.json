@@ -1,0 +1,929 @@
+{
+    "success": true,
+    "forms": [
+        {
+            "name": "rentalShort",
+            "title": "اجاره موردی",
+            "formId": 1007,
+            "steps": [
+                {
+                    "stepId": 1138,
+                    "title": "انتخاب کارگاه",
+                    "discription": null,
+                    "numrow": 1,
+                    "sections": [
+                        {
+                            "option": 1005,
+                            "sectionId": "1142",
+                            "title": "کارگاه",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 28,
+                            "style": 1,
+                            "options": {
+                                "4": " سیدعلی لاجوردی, کارگاه کلی ",
+                                "10": " a "
+                            }
+                        },
+                        {
+                            "option": 10,
+                            "sectionId": "1234",
+                            "title": "دسته",
+                            "placeholder": null,
+                            "required": true,
+                            "type": 14,
+                            "style": 1,
+                            "options": [
+                                "دسته 1",
+                                "دسته 2"
+                            ],
+                            "options2": {
+                                "دسته 1": {
+                                    "1230": "زیر 1",
+                                    "1231": "زیر 2"
+                                },
+                                "دسته 2": {
+                                    "1232": "زیر 3",
+                                    "1233": "زیر 4"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "stepId": 1139,
+                    "title": "نوع کار",
+                    "discription": null,
+                    "numrow": 10,
+                    "sections": [
+                        {
+                            "option": 1143,
+                            "sectionId": "1147",
+                            "title": "نوع کار",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 4,
+                            "style": 1,
+                            "options": {
+                                "1144": "بارگیری",
+                                "1145": "تخلیه",
+                                "1146": "نصب",
+                                "1238": "جابجایی"
+                            }
+                        },
+                        {
+                            "option": 0,
+                            "sectionId": "1177",
+                            "title": "محل اجرا",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 0,
+                            "style": 1
+                        },
+                        {
+                            "option": 0,
+                            "sectionId": "1148",
+                            "title": "وزن بار",
+                            "placeholder": "تن",
+                            "required": false,
+                            "type": 3,
+                            "style": 1
+                        },
+                        {
+                            "option": 1149,
+                            "sectionId": "1154",
+                            "title": "نوع بار",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 4,
+                            "style": 1,
+                            "options": {
+                                "1150": "اسکلت",
+                                "1151": "بتن",
+                                "1152": "ماشین آلات",
+                                "1153": "چیلر"
+                            }
+                        },
+                        {
+                            "option": 0,
+                            "sectionId": "1178",
+                            "title": "ارتفاع",
+                            "placeholder": "متر",
+                            "required": false,
+                            "type": 3,
+                            "style": 1
+                        },
+                        {
+                            "option": 0,
+                            "sectionId": "1179",
+                            "title": "فاصله افقی",
+                            "placeholder": "متر",
+                            "required": false,
+                            "type": 3,
+                            "style": 1
+                        },
+                        {
+                            "option": 1,
+                            "sectionId": "1155",
+                            "title": "زمان اجرا",
+                            "placeholder": null,
+                            "required": true,
+                            "type": 6,
+                            "style": 1
+                        },
+                        {
+                            "option": 1,
+                            "sectionId": "1180",
+                            "title": "شرایط خاص محیطی",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 1,
+                            "style": 1
+                        }
+                    ]
+                },
+                {
+                    "stepId": 1140,
+                    "title": "خدمات اضافی",
+                    "discription": null,
+                    "numrow": 1,
+                    "sections": [
+                        {
+                            "option": 1181,
+                            "sectionId": "1185",
+                            "title": "بیمه",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 4,
+                            "style": 1,
+                            "options": {
+                                "1183": "بیمه 1",
+                                "1184": "بیمه 2"
+                            }
+                        },
+                        {
+                            "option": 1182,
+                            "sectionId": "1186",
+                            "title": "خدمات",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 5,
+                            "style": 1,
+                            "options": {
+                                "1187": "هزینه رفت و برگشت",
+                                "1188": "تامین غذا",
+                                "1239": "HSE",
+                                "1240": "نقشه اجرایی"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "stepId": 1141,
+                    "title": "شرایط پرداخت",
+                    "discription": null,
+                    "numrow": 10,
+                    "sections": [
+                        {
+                            "option": 1157,
+                            "sectionId": "1159",
+                            "title": "درصد پرداخت",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 4,
+                            "style": 1,
+                            "options": {
+                                "1161": "10%",
+                                "1162": "20%",
+                                "1163": "30%",
+                                "1164": "40%",
+                                "1165": "50%",
+                                "1166": "60%",
+                                "1167": "70%",
+                                "1168": "80%",
+                                "1169": "90%",
+                                "1170": "کل"
+                            }
+                        },
+                        {
+                            "option": 1158,
+                            "sectionId": "1160",
+                            "title": "مهلت پرداخت",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 4,
+                            "style": 1,
+                            "options": {
+                                "1171": "پیش پرداخت",
+                                "1172": "۷ روز",
+                                "1173": "۱۵ روز",
+                                "1174": "۳۰ روز",
+                                "1175": "۶۰ روز",
+                                "1176": "۹۰ روز"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "rentalLong",
+            "title": "اجاره طولانی مدت",
+            "formId": 1190,
+            "steps": [
+                {
+                    "stepId": 1192,
+                    "title": "انتخاب کارگاه",
+                    "discription": null,
+                    "numrow": 1,
+                    "sections2": [
+                        {
+                            "sectionId": 1189,
+                            "title": "عنوان",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 0,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1073,
+                            "title": "کارفرما ",
+                            "placeholder": "",
+                            "required": false,
+                            "type": 28,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1074,
+                            "title": "آدرس",
+                            "placeholder": "",
+                            "required": false,
+                            "type": 1,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1075,
+                            "title": "نقطه جغرافیایی",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 36,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1076,
+                            "title": "بیمه مسئولیت ",
+                            "placeholder": "",
+                            "required": false,
+                            "type": 7,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1077,
+                            "title": "تاریخ انقضاء بیمه",
+                            "placeholder": "",
+                            "required": false,
+                            "type": 6,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1079,
+                            "title": "نام و نام خانوادگی ",
+                            "placeholder": "",
+                            "required": false,
+                            "type": 0,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1080,
+                            "title": "شماره تلفن ",
+                            "placeholder": "",
+                            "required": false,
+                            "type": 0,
+                            "style": 1
+                        }
+                    ],
+                    "sections": [
+                        {
+                            "option": 1005,
+                            "sectionId": "1193",
+                            "title": "کارگاه",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 28,
+                            "style": 1,
+                            "options": {
+                                "4": " سیدعلی لاجوردی, کارگاه کلی ",
+                                "10": " a "
+                            }
+                        },
+                        {
+                            "option": 10,
+                            "sectionId": "1235",
+                            "title": "دسته",
+                            "placeholder": null,
+                            "required": true,
+                            "type": 10,
+                            "style": 1,
+                            "options": [
+                                "دسته 1",
+                                "دسته 2"
+                            ],
+                            "options2": {
+                                "دسته 1": {
+                                    "1230": "زیر 1",
+                                    "1231": "زیر 2"
+                                },
+                                "دسته 2": {
+                                    "1232": "زیر 3",
+                                    "1233": "زیر 4"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "stepId": 1194,
+                    "title": "انتخاب جرثقیل",
+                    "discription": null,
+                    "numrow": 10,
+                    "sections2": [
+                        {
+                            "sectionId": 1033,
+                            "title": "کد پیمانکار",
+                            "placeholder": "",
+                            "required": false,
+                            "type": 28,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1034,
+                            "title": "تناژ اسمی",
+                            "placeholder": "تن",
+                            "required": false,
+                            "type": 3,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1097,
+                            "title": "تناژ واقعی",
+                            "placeholder": "تن",
+                            "required": false,
+                            "type": 3,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1022,
+                            "title": "محدوده فعالیت ",
+                            "placeholder": "",
+                            "required": false,
+                            "type": 5,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1035,
+                            "title": "نوع جرثقیل",
+                            "placeholder": "",
+                            "required": false,
+                            "type": 4,
+                            "style": 1,
+                            "options": {
+                                "1084": "تلسکوپی لاستیکی",
+                                "1085": "تلسکوپی زنجیری",
+                                "1086": "کارگاهی لاستیکی",
+                                "1087": "بوم خشک زنجیری",
+                                "1088": "بوم خشک لاستیکی",
+                                "1089": "بوم تراک (کفی)",
+                                "1090": "برجکی (تاور)"
+                            }
+                        },
+                        {
+                            "sectionId": 1036,
+                            "title": "مدل ",
+                            "placeholder": "",
+                            "required": false,
+                            "type": 10,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1037,
+                            "title": "سال ساخت سندی",
+                            "placeholder": "میلادی",
+                            "required": false,
+                            "type": 0,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1091,
+                            "title": "سال ساخت کمپانی ",
+                            "placeholder": "میلادی",
+                            "required": false,
+                            "type": 0,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1103,
+                            "title": "کامپیوتر",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 4,
+                            "style": 1,
+                            "options": {
+                                "1099": "ندارد",
+                                "1100": "فابریک",
+                                "1101": "چینی",
+                                "1102": "ایرانی"
+                            }
+                        },
+                        {
+                            "sectionId": 1104,
+                            "title": "قطع کن",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 4,
+                            "style": 1,
+                            "options": {
+                                "1099": "ندارد",
+                                "1100": "فابریک",
+                                "1101": "چینی",
+                                "1102": "ایرانی"
+                            }
+                        },
+                        {
+                            "sectionId": 1038,
+                            "title": "درجه",
+                            "placeholder": "",
+                            "required": false,
+                            "type": 12,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1039,
+                            "title": "تصویر جرثقیل",
+                            "placeholder": "لازم است تصویر به نحوی باشد که وضعیت ظاهری کاملا نمایان و به روز باشد",
+                            "required": false,
+                            "type": 7,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1040,
+                            "title": "عیوب جرثقیل",
+                            "placeholder": "",
+                            "required": false,
+                            "type": 1,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1092,
+                            "title": "مزایا جرثقیل",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 1,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1093,
+                            "title": "توضیحات",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 1,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1042,
+                            "title": "گواهی سلامت",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 7,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1043,
+                            "title": "صادر کننده گواهی",
+                            "placeholder": "در صورتی که متفرقه است در توضیحات ذکر شود",
+                            "required": false,
+                            "type": 4,
+                            "style": 1,
+                            "options": {
+                                "1105": "SGS",
+                                "1106": "متفرقه"
+                            }
+                        },
+                        {
+                            "sectionId": 1044,
+                            "title": "مدت اعتبار گواهی",
+                            "placeholder": "",
+                            "required": false,
+                            "type": 6,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1045,
+                            "title": "بیمه مسئولیت مدنی",
+                            "placeholder": "",
+                            "required": false,
+                            "type": 7,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1046,
+                            "title": "تاریخ انقضاء بیمه مسئولیت",
+                            "placeholder": "",
+                            "required": false,
+                            "type": 6,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1047,
+                            "title": "بیمه شخص ثالث",
+                            "placeholder": "",
+                            "required": false,
+                            "type": 7,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1048,
+                            "title": "تاریخ انقضاء ثالث",
+                            "placeholder": "",
+                            "required": false,
+                            "type": 6,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1107,
+                            "title": "بیمه بدنه جرثقیل (CPM)",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 7,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1108,
+                            "title": "تاریخ انقضا  بیمه بدنه",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 6,
+                            "style": 1
+                        }
+                    ],
+                    "sections": [
+                        {
+                            "option": 1003,
+                            "sectionId": "1195",
+                            "title": "جرثقیل",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 28,
+                            "style": 1,
+                            "options": {
+                                "3": "  "
+                            }
+                        },
+                        {
+                            "option": 0,
+                            "sectionId": "1196",
+                            "title": "حداکثر بار",
+                            "placeholder": "تن",
+                            "required": false,
+                            "type": 3,
+                            "style": 1
+                        },
+                        {
+                            "option": 0,
+                            "sectionId": "1198",
+                            "title": "تاریخ از",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 6,
+                            "style": 1
+                        },
+                        {
+                            "option": 0,
+                            "sectionId": "1199",
+                            "title": "تاریخ الی",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 6,
+                            "style": 1
+                        },
+                        {
+                            "option": 1,
+                            "sectionId": "1203",
+                            "title": "شرایط خاص محیطی",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 1,
+                            "style": 1
+                        }
+                    ]
+                },
+                {
+                    "stepId": 1204,
+                    "title": "خدمات اضافی",
+                    "discription": null,
+                    "numrow": 1,
+                    "sections": [
+                        {
+                            "option": 1181,
+                            "sectionId": "1205",
+                            "title": "بیمه",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 4,
+                            "style": 1,
+                            "options": {
+                                "1183": "بیمه 1",
+                                "1184": "بیمه 2"
+                            }
+                        },
+                        {
+                            "option": 1182,
+                            "sectionId": "1206",
+                            "title": "خدمات",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 5,
+                            "style": 1,
+                            "options": {
+                                "1187": "هزینه رفت و برگشت",
+                                "1188": "تامین غذا",
+                                "1239": "HSE",
+                                "1240": "نقشه اجرایی"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "stepId": 1207,
+                    "title": "شرایط پرداخت",
+                    "discription": null,
+                    "numrow": 10,
+                    "sections": [
+                        {
+                            "option": 1157,
+                            "sectionId": "1208",
+                            "title": "درصد پرداخت",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 4,
+                            "style": 1,
+                            "options": {
+                                "1161": "10%",
+                                "1162": "20%",
+                                "1163": "30%",
+                                "1164": "40%",
+                                "1165": "50%",
+                                "1166": "60%",
+                                "1167": "70%",
+                                "1168": "80%",
+                                "1169": "90%",
+                                "1170": "کل"
+                            }
+                        },
+                        {
+                            "option": 1158,
+                            "sectionId": "1209",
+                            "title": "مهلت پرداخت",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 4,
+                            "style": 1,
+                            "options": {
+                                "1171": "پیش پرداخت",
+                                "1172": "۷ روز",
+                                "1173": "۱۵ روز",
+                                "1174": "۳۰ روز",
+                                "1175": "۶۰ روز",
+                                "1176": "۹۰ روز"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "rentalProject",
+            "title": "پروژه ای",
+            "formId": 1191,
+            "steps": [
+                {
+                    "stepId": 1210,
+                    "title": "انتخاب کارگاه",
+                    "discription": null,
+                    "numrow": 1,
+                    "sections2": [
+                        {
+                            "sectionId": 1189,
+                            "title": "عنوان",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 0,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1073,
+                            "title": "کارفرما ",
+                            "placeholder": "",
+                            "required": false,
+                            "type": 28,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1074,
+                            "title": "آدرس",
+                            "placeholder": "",
+                            "required": false,
+                            "type": 1,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1075,
+                            "title": "نقطه جغرافیایی",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 36,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1076,
+                            "title": "بیمه مسئولیت ",
+                            "placeholder": "",
+                            "required": false,
+                            "type": 7,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1077,
+                            "title": "تاریخ انقضاء بیمه",
+                            "placeholder": "",
+                            "required": false,
+                            "type": 6,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1079,
+                            "title": "نام و نام خانوادگی ",
+                            "placeholder": "",
+                            "required": false,
+                            "type": 0,
+                            "style": 1
+                        },
+                        {
+                            "sectionId": 1080,
+                            "title": "شماره تلفن ",
+                            "placeholder": "",
+                            "required": false,
+                            "type": 0,
+                            "style": 1
+                        }
+                    ],
+                    "sections": [
+                        {
+                            "option": 1005,
+                            "sectionId": "1211",
+                            "title": "کارگاه",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 28,
+                            "style": 1,
+                            "options": {
+                                "4": " سیدعلی لاجوردی, کارگاه کلی ",
+                                "10": " a "
+                            }
+                        },
+                        {
+                            "option": 10,
+                            "sectionId": "1236",
+                            "title": "دسته",
+                            "placeholder": null,
+                            "required": true,
+                            "type": 10,
+                            "style": 1,
+                            "options": [
+                                "دسته 1",
+                                "دسته 2"
+                            ],
+                            "options2": {
+                                "دسته 1": {
+                                    "1230": "زیر 1",
+                                    "1231": "زیر 2"
+                                },
+                                "دسته 2": {
+                                    "1232": "زیر 3",
+                                    "1233": "زیر 4"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "stepId": 1212,
+                    "title": "مشخصات پروژه",
+                    "discription": null,
+                    "numrow": 1,
+                    "sections": [
+                        {
+                            "option": 0,
+                            "sectionId": "1213",
+                            "title": "مستند پروژه",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 8,
+                            "style": 1
+                        },
+                        {
+                            "option": 0,
+                            "sectionId": "1221",
+                            "title": "توضیحات",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 1,
+                            "style": 1
+                        }
+                    ]
+                },
+                {
+                    "stepId": 1222,
+                    "title": "خدمات اضافی",
+                    "discription": null,
+                    "numrow": 1,
+                    "sections": [
+                        {
+                            "option": 1181,
+                            "sectionId": "1223",
+                            "title": "بیمه",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 4,
+                            "style": 1,
+                            "options": {
+                                "1183": "بیمه 1",
+                                "1184": "بیمه 2"
+                            }
+                        },
+                        {
+                            "option": 1182,
+                            "sectionId": "1224",
+                            "title": "خدمات",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 5,
+                            "style": 1,
+                            "options": {
+                                "1187": "هزینه رفت و برگشت",
+                                "1188": "تامین غذا",
+                                "1239": "HSE",
+                                "1240": "نقشه اجرایی"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "stepId": 1225,
+                    "title": "شرایط پرداخت",
+                    "discription": null,
+                    "numrow": 10,
+                    "sections": [
+                        {
+                            "option": 1157,
+                            "sectionId": "1226",
+                            "title": "درصد پرداخت",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 4,
+                            "style": 1,
+                            "options": {
+                                "1161": "10%",
+                                "1162": "20%",
+                                "1163": "30%",
+                                "1164": "40%",
+                                "1165": "50%",
+                                "1166": "60%",
+                                "1167": "70%",
+                                "1168": "80%",
+                                "1169": "90%",
+                                "1170": "کل"
+                            }
+                        },
+                        {
+                            "option": 1158,
+                            "sectionId": "1227",
+                            "title": "مهلت پرداخت",
+                            "placeholder": null,
+                            "required": false,
+                            "type": 4,
+                            "style": 1,
+                            "options": {
+                                "1171": "پیش پرداخت",
+                                "1172": "۷ روز",
+                                "1173": "۱۵ روز",
+                                "1174": "۳۰ روز",
+                                "1175": "۶۰ روز",
+                                "1176": "۹۰ روز"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
