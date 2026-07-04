@@ -624,3 +624,20 @@ body {
 .quill-wrapper .ql-editor ul {
   margin-bottom: 0.25rem;
 }
+
+/* Print / PDF export ------------------------------------------------------- */
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+  html,
+  body {
+    background: #ffffff !important;
+  }
+  /* Print background colors/badges/charts faithfully (matches on-screen). */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}

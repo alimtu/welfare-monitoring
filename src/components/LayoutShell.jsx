@@ -49,10 +49,10 @@ export default function LayoutShell({ children }) {
 
   return (
     <PWAProvider>
-      <div className="min-h-screen bg-grey-100 flex justify-center overflow-x-hidden">
-        <div className="w-full max-w-[480px] min-h-screen bg-white shadow-xl relative flex flex-col overflow-x-hidden">
+      <div className="min-h-screen bg-grey-100 flex justify-center overflow-x-hidden print:bg-white">
+        <div className="w-full max-w-[480px] min-h-screen bg-white shadow-xl relative flex flex-col overflow-x-hidden print:shadow-none">
           {!isLoginPage && !isLocationRequiredPage && (
-            <header className="fixed top-0 w-full md:max-w-[480px] md:w-[480px] z-40 flex h-14 items-center justify-between border-b border-grey-100 bg-white px-4">
+            <header className="fixed top-0 w-full md:max-w-[480px] md:w-[480px] z-40 flex h-14 items-center justify-between border-b border-grey-100 bg-white px-4 print:hidden">
               <div className="flex items-center gap-2 min-w-0">
                 <img src="/icons/logo.png" alt="" className="size-8 shrink-0 rounded object-contain" />
                 <span className="text-sm font-bold text-primary-600 truncate">پایش رفاه دانشگاهی</span>
@@ -81,7 +81,7 @@ export default function LayoutShell({ children }) {
           )}
           <Toaster position="top-center" />
 
-          <main className="flex-1 pt-14">{children}</main>
+          <main className="flex-1 pt-14 print:pt-0">{children}</main>
           {/* --- GET LOCATION FROM USER DISABLED (temporary) --- */}
           {/* {needsLocationPrompt && (
             <LocationPrompt status={status} onAllow={requestPermission} onClose={...} />

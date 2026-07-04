@@ -22,7 +22,7 @@ export function WelfareNav() {
   if (pathname.startsWith('/submit/')) return null;
 
   return (
-    <nav className="fixed bottom-0 inset-x-0 z-40 flex justify-center">
+    <nav className="fixed bottom-0 inset-x-0 z-40 flex justify-center print:hidden">
       <div className="flex w-full max-w-[480px] items-stretch justify-around border-t border-grey-100 bg-white/95 backdrop-blur-sm safe-bottom">
         {ITEMS.map((item) => {
           const Icon = item.icon;

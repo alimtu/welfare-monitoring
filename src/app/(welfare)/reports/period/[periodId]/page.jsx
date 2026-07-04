@@ -13,7 +13,7 @@ import {
   Cell,
   Tooltip,
 } from 'recharts';
-import { SearchXIcon } from 'lucide-react';
+import { SearchXIcon, PrinterIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '@/components/ui/table';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
@@ -25,7 +25,7 @@ import { EmptyState } from '@/components/welfare/EmptyState';
 import { useWelfare } from '@/lib/welfare/WelfareContext';
 import { INDICATORS, TOTAL_INDICATORS } from '@/lib/welfare/indicators';
 import { calcOverallPeriodScore, calcAverageScore } from '@/lib/welfare/calculations';
-import { toPersianDigits, formatNumber, formatValue, formatDate, scoreMeta } from '@/lib/welfare/format';
+import { toPersianDigits, formatNumber, formatValue, formatDate, formatDateTime, scoreMeta } from '@/lib/welfare/format';
 import { ListChecksIcon, CheckCircle2Icon, GaugeIcon } from 'lucide-react';
 
 function BarTooltip({ active, payload }) {
@@ -74,20 +74,42 @@ export default function PeriodReportPage() {
     hex: scoreMeta(r.score || 0).hex,
   }));
   const radarData = data.rows.map((r) => ({ code: r.ind.code, fullName: r.ind.title, score: r.score || 0 }));
+  const generatedAt = formatDateTime(new Date().toISOString());
 
   return (
-    <div className="space-y-4 p-4">
-      <BackHeader title="گزارش دوره" fallbackHref="/reports" />
+    <div id="period-report" className="space-y-4 p-4">
+      {/* Screen header + export action (hidden in the printed PDF) */}
+      <div className="flex items-center justify-between gap-2 print:hidden">
+        <BackHeader title="گزارش دوره" fallbackHref="/reports" />
+        <Button size="sm" variant="outline" onClick={() => window.print()}>
+          <PrinterIcon className="size-4" />
+          خروجی PDF
+        </Button>
+      </div>
 
-      <div>
+      {/* Print-only document header */}
+      <div className="hidden print:block">
+        <div className="flex items-center gap-3 border-b border-grey-200 pb-3">
+          <img src="/icons/logo.png" alt="" className="size-11 object-contain" />
+          <div>
+            <p className="text-base font-bold text-grey-800">سامانه پایش رفاه دانشگاهی</p>
+            <p className="text-xs text-grey-500">گزارش عملکرد دوره ارزیابی</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="break-inside-avoid">
         <p className="text-sm font-bold text-grey-800">{period.title}</p>
         <p className="mt-0.5 text-xs text-grey-400">
           {formatDate(period.startDate)} تا {formatDate(period.endDate)}
         </p>
+        <p className="mt-0.5 hidden text-[11px] text-grey-400 print:block">
+          تاریخ تهیه گزارش: {generatedAt}
+        </p>
       </div>
 
       {/* Executive summary */}
-      <div className="rounded-xl bg-primary-500 p-4 text-white">
+      <div className="break-inside-avoid rounded-xl bg-primary-500 p-4 text-white">
         <p className="text-xs opacity-90">امتیاز کلی دوره</p>
         <p className="mt-1 text-3xl font-extrabold">
           {toPersianDigits(formatNumber(data.overall, 1))}
@@ -98,14 +120,14 @@ export default function PeriodReportPage() {
         </p>
       </div>
 
-      <div className="grid grid-cols-3 gap-2.5">
+      <div className="grid grid-cols-3 gap-2.5 break-inside-avoid">
         <StatCard icon={ListChecksIcon} label="کل شاخص‌ها" value={toPersianDigits(TOTAL_INDICATORS)} />
         <StatCard icon={CheckCircle2Icon} label="ثبت‌شده" value={toPersianDigits(data.submittedCount)} accentClassName="bg-[#dcfce7] text-[#15803d]" />
         <StatCard icon={GaugeIcon} label="میانگین" value={toPersianDigits(formatNumber(data.average, 1))} accentClassName="bg-[#fef3c7] text-[#b45309]" />
       </div>
 
       {/* Bar chart */}
-      <Card>
+      <Card className="break-inside-avoid">
         <CardHeader>
           <CardTitle className="text-sm">امتیاز شاخص‌ها</CardTitle>
         </CardHeader>
@@ -127,7 +149,7 @@ export default function PeriodReportPage() {
       </Card>
 
       {/* Radar chart */}
-      <Card>
+      <Card className="break-inside-avoid">
         <CardHeader>
           <CardTitle className="text-sm">نمودار راداری</CardTitle>
         </CardHeader>
@@ -137,7 +159,7 @@ export default function PeriodReportPage() {
       </Card>
 
       {/* Indicators table */}
-      <Card>
+      <Card className="break-inside-avoid">
         <CardHeader>
           <CardTitle className="text-sm">جدول شاخص‌ها</CardTitle>
         </CardHeader>

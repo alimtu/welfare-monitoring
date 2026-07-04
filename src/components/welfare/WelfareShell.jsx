@@ -23,7 +23,7 @@ export function WelfareShell({ children }) {
 
   return (
     <div className="pb-20">
-      <div className="sticky top-14 z-30 border-b border-grey-100 bg-white px-4 py-2.5">
+      <div className="sticky top-14 z-30 border-b border-grey-100 bg-white px-4 py-2.5 print:hidden">
         <PeriodSelector />
       </div>
       <div className="min-h-[calc(100dvh-160px)]">{children}</div>
