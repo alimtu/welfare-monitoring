@@ -15,7 +15,7 @@ import { toPersianDigits } from '@/lib/welfare/format';
  * @param {{ value: string|number, onChange: (raw: string) => void, unit?: string,
  *           id?: string, placeholder?: string, className?: string }} props
  */
-export function NumberInput({ value, onChange, unit, id, placeholder = '۰', className }) {
+export function NumberInput({ value, onChange, unit, id, placeholder = 'مقدار را وارد کنید', className }) {
   return (
     <div className="relative">
       <Input

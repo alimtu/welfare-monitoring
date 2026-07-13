@@ -70,9 +70,15 @@ function ChecklistForm({ indicator, period, existing }) {
     return map;
   }, [result]);
 
+  const [attempted, setAttempted] = useState(false);
+
   const complete = isChecklistComplete(indicator, inputs);
   const anyFilled = result.criteriaScores.some((r) => r.filled);
   const meta = scoreMeta(result.finalScore);
+
+  // Which criteria are still incomplete (drives the inline feedback).
+  const incompleteIds = indicator.criteria.filter((c) => !scoreById[c.id]?.filled).map((c) => c.id);
+  const filledCount = indicator.criteria.length - incompleteIds.length;
 
   const setField = (criterionId, key, value) =>
     setInputs((prev) => ({ ...prev, [criterionId]: { ...prev[criterionId], [key]: value } }));
@@ -82,7 +88,14 @@ function ChecklistForm({ indicator, period, existing }) {
 
   const handleSave = (status) => {
     if (status === 'submitted' && !complete) {
-      toast.error('برای ثبت نهایی، همه معیارها را تکمیل کنید.');
+      setAttempted(true);
+      const nums = incompleteIds
+        .map((id) => toPersianDigits(indicator.criteria.findIndex((c) => c.id === id) + 1))
+        .join('، ');
+      toast.error(`معیار${incompleteIds.length > 1 ? 'های' : ''} ${nums} کامل نیست. همه فیلدهای آن را کامل کنید.`);
+      if (typeof document !== 'undefined') {
+        document.querySelector(`[data-criterion="${incompleteIds[0]}"]`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
       return;
     }
     const record = buildSubmission({
@@ -111,7 +124,17 @@ function ChecklistForm({ indicator, period, existing }) {
 
       {/* Measurement criteria */}
       <div className="space-y-4">
-        <h2 className="text-sm font-bold text-grey-800">ارزیابی معیارها</h2>
+        <div className="flex items-center justify-between">
+          <h2 className="text-sm font-bold text-grey-800">ارزیابی معیارها</h2>
+          <span
+            className={cn(
+              'rounded-full px-2 py-0.5 text-[11px] font-medium',
+              complete ? 'bg-[#dcfce7] text-[#15803d]' : 'bg-grey-100 text-grey-500',
+            )}
+          >
+            {toPersianDigits(filledCount)} از {toPersianDigits(indicator.criteria.length)} تکمیل‌شده
+          </span>
+        </div>
         {indicator.criteria.map((c, idx) => (
           <CriterionCard
             key={c.id}
@@ -119,6 +142,7 @@ function ChecklistForm({ indicator, period, existing }) {
             criterion={c}
             input={inputs[c.id] || {}}
             row={scoreById[c.id]}
+            showError={attempted && !scoreById[c.id]?.filled}
             onField={setField}
             onOption={setOption}
           />
@@ -175,7 +199,7 @@ function ChecklistForm({ indicator, period, existing }) {
             <SaveIcon className="size-4" />
             ذخیره پیش‌نویس
           </Button>
-          <Button className="h-11 flex-1" onClick={() => handleSave('submitted')} disabled={!complete}>
+          <Button className="h-11 flex-1" onClick={() => handleSave('submitted')}>
             <SendIcon className="size-4" />
             ثبت نهایی
           </Button>
@@ -186,10 +210,13 @@ function ChecklistForm({ indicator, period, existing }) {
 }
 
 /** Renders one criterion: header + measurement inputs (by type) + earned score. */
-function CriterionCard({ index, criterion, input, row, onField, onOption }) {
+function CriterionCard({ index, criterion, input, row, showError, onField, onOption }) {
   const m = criterion.measure;
   return (
-    <div className="rounded-xl border border-grey-100 p-3.5">
+    <div
+      data-criterion={criterion.id}
+      className={cn('rounded-xl border p-3.5', showError ? 'border-[#fcd34d] bg-[#fffbeb]' : 'border-grey-100')}
+    >
       <div className="mb-3 flex items-start justify-between gap-2">
         <div className="min-w-0">
           <p className="text-xs font-semibold text-grey-800">
@@ -258,8 +285,12 @@ function CriterionCard({ index, criterion, input, row, onField, onOption }) {
 
       {/* Earned score for this criterion */}
       <div className="mt-3 flex items-center justify-between border-t border-grey-50 pt-2.5 text-xs">
-        <span className="text-grey-500">
-          {row?.filled ? `مقدار: ${formatCriterionValue(row)}` : 'در انتظار ورود داده'}
+        <span className={cn(showError && !row?.filled ? 'font-medium text-[#b45309]' : 'text-grey-500')}>
+          {row?.filled
+            ? `مقدار: ${formatCriterionValue(row)}`
+            : showError
+              ? 'این معیار کامل نیست'
+              : 'در انتظار ورود داده'}
         </span>
         <span className={cn('font-bold', row?.filled ? 'text-primary-600' : 'text-grey-300')}>
           امتیاز: {toPersianDigits(formatNumber(row?.score || 0, 1))} از {toPersianDigits(criterion.maxScore)}

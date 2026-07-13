@@ -15,7 +15,7 @@
  */
 export function matchBand(value, bands) {
   return (
-    bands.find((b) => {
+    bands.find(b => {
       const okMin = b.min == null || value >= b.min;
       const okMax = b.max == null || value < b.max;
       return okMin && okMax;
@@ -42,7 +42,7 @@ export function calculateDirect(indicator, inputData) {
   };
 }
 
-const round1 = (n) => Math.round(n * 10) / 10;
+const round1 = n => Math.round(n * 10) / 10;
 
 /** Display unit for a criterion measure (used by the UI to format the value). */
 export function criterionUnit(measure) {
@@ -63,7 +63,7 @@ export function evaluateCriterion(criterion, input = {}) {
   const m = criterion.measure;
 
   if (m.type === 'select') {
-    const option = m.options.find((o) => o.value === input.option) || null;
+    const option = m.options.find(o => o.value === input.option) || null;
     return {
       filled: !!option,
       measureType: 'select',
@@ -77,14 +77,26 @@ export function evaluateCriterion(criterion, input = {}) {
   if (m.type === 'qualityAverage') {
     let count = 0;
     let weighted = 0;
+    let anyEntered = false;
     for (const level of m.levels) {
-      const c = Number(input[level.value]) || 0;
+      const raw = input[level.value];
+      if (raw !== undefined && raw !== '') anyEntered = true; // 0 counts as entered
+      const c = Number(raw) || 0;
       count += c;
       weighted += c * level.score;
     }
-    const filled = count > 0;
-    const avg = filled ? round1(weighted / count) : 0;
-    return { filled, measureType: 'qualityAverage', value: avg, optionLabel: null, band: null, score: avg };
+    // Filled once the user has entered at least one level count. A total of 0
+    // (all levels 0) is a valid answer, so completeness is based on entry, not sum.
+    const filled = anyEntered;
+    const avg = count > 0 ? round1(weighted / count) : 0;
+    return {
+      filled,
+      measureType: 'qualityAverage',
+      value: avg,
+      optionLabel: null,
+      band: null,
+      score: avg,
+    };
   }
 
   // Numeric measures: count / percent / ratio
@@ -95,7 +107,17 @@ export function evaluateCriterion(criterion, input = {}) {
     const rawD = input[m.denominator.key];
     const n = Number(rawN);
     const d = Number(rawD);
-    filled = rawN !== undefined && rawN !== '' && rawD !== undefined && rawD !== '' && !Number.isNaN(n) && !Number.isNaN(d) && d > 0;
+    const bothEntered =
+      rawN !== undefined &&
+      rawN !== '' &&
+      rawD !== undefined &&
+      rawD !== '' &&
+      !Number.isNaN(n) &&
+      !Number.isNaN(d);
+    // Denominator must be > 0, EXCEPT the 0/0 case which is a valid "0%"
+    // (e.g. no cost and the employee paid nothing). A positive numerator over a
+    // 0 denominator stays invalid (contradictory / division by zero).
+    filled = bothEntered && (d > 0 || n === 0);
     value = d > 0 ? (n / d) * 100 : 0;
   } else {
     const raw = input[m.input.key];
@@ -104,7 +126,14 @@ export function evaluateCriterion(criterion, input = {}) {
     value = v;
   }
   const band = matchBand(value, m.bands);
-  return { filled, measureType: m.type, value, optionLabel: null, band, score: band ? band.score : 0 };
+  return {
+    filled,
+    measureType: m.type,
+    value,
+    optionLabel: null,
+    band,
+    score: band ? band.score : 0,
+  };
 }
 
 /**
@@ -113,7 +142,7 @@ export function evaluateCriterion(criterion, input = {}) {
  * @param {Object} checklistInputs { criterionId: { ...inputs } }
  */
 export function buildCriteriaScores(indicator, checklistInputs = {}) {
-  return (indicator.criteria || []).map((c) => {
+  return (indicator.criteria || []).map(c => {
     const ev = evaluateCriterion(c, checklistInputs[c.id] || {});
     return {
       criterionId: c.id,
@@ -145,7 +174,12 @@ export function calculateChecklist(indicator, checklistInputs = {}) {
   const matchedBand = matchBand(percentage, indicator.scoringBands);
   const finalScore = matchedBand ? matchedBand.score : 0;
   // eslint-disable-next-line no-console
-  console.log(`[calc:checklist] ${indicator.id}`, { totalScore, maxTotalScore, percentage, finalScore });
+  console.log(`[calc:checklist] ${indicator.id}`, {
+    totalScore,
+    maxTotalScore,
+    percentage,
+    finalScore,
+  });
   return {
     criteriaScores,
     totalScore,
@@ -162,7 +196,7 @@ export function calculateChecklist(indicator, checklistInputs = {}) {
  */
 export function isChecklistComplete(indicator, checklistInputs = {}) {
   return (indicator.criteria || []).every(
-    (c) => evaluateCriterion(c, checklistInputs[c.id] || {}).filled,
+    c => evaluateCriterion(c, checklistInputs[c.id] || {}).filled
   );
 }
 
@@ -183,7 +217,7 @@ export function computeResult(indicator, { inputData = {}, checklistInputs = {} 
  * @param {Array} submissions submissions for a single period
  */
 export function calcOverallPeriodScore(submissions) {
-  const submitted = submissions.filter((s) => s.status === 'submitted');
+  const submitted = submissions.filter(s => s.status === 'submitted');
   let weightedSum = 0;
   let weightSum = 0;
   for (const s of submitted) {
@@ -197,7 +231,7 @@ export function calcOverallPeriodScore(submissions) {
  * Average of final scores across submitted rows (unweighted).
  */
 export function calcAverageScore(submissions) {
-  const submitted = submissions.filter((s) => s.status === 'submitted');
+  const submitted = submissions.filter(s => s.status === 'submitted');
   if (submitted.length === 0) return 0;
   return submitted.reduce((sum, s) => sum + (s.finalScore || 0), 0) / submitted.length;
 }
