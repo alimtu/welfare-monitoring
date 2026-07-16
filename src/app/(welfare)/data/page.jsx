@@ -12,6 +12,7 @@ import {
   InboxIcon,
   DownloadIcon,
   RotateCcwIcon,
+  FileDownIcon,
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Textarea } from '@/components/ui/textarea';
@@ -108,6 +109,25 @@ async function copyText(text) {
   }
 }
 
+/** Timestamp for download filenames, e.g. 20260716-1432. Kept ASCII/sortable. */
+function fileStamp() {
+  const d = new Date();
+  const p = (n) => String(n).padStart(2, '0');
+  return `${d.getFullYear()}${p(d.getMonth() + 1)}${p(d.getDate())}-${p(d.getHours())}${p(d.getMinutes())}`;
+}
+
+/** Save text to the device as a .json file (no server involved). */
+function downloadJson(filename, text) {
+  const url = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
 /** A monospace, LTR, scrollable box for JSON / raw values. */
 function CodeBox({ children }) {
   return (
@@ -168,6 +188,22 @@ export default function DataPage() {
     }
     const ok = await copyText(JSON.stringify(bundle, null, 2));
     toast[ok ? 'success' : 'error'](ok ? 'کپی شد ✓' : 'کپی ناموفق بود');
+  };
+
+  // Save the bundle as a .json file — for data too large to send as a message.
+  const handleDownload = (keys, scope, emptyMsg) => {
+    const bundle = buildBundle(keys);
+    if (Object.keys(bundle).length === 0) {
+      toast.error(emptyMsg);
+      return;
+    }
+    try {
+      downloadJson(`welfare-${scope}-${fileStamp()}.json`, JSON.stringify(bundle, null, 2));
+      toast.success('فایل دانلود شد ✓');
+    } catch (err) {
+      console.error('[data] download failed', err);
+      toast.error('دانلود ناموفق بود');
+    }
   };
 
   const toggle = (key) =>
@@ -340,6 +376,31 @@ export default function DataPage() {
               کپی همه داده‌ها
             </Button>
           </div>
+
+          {/* Download actions — for data too long to send as a text message. */}
+          <div className="grid grid-cols-2 gap-2">
+            <Button
+              size="sm"
+              variant="outline"
+              className="h-10"
+              onClick={() => handleDownload(WELFARE_KEYS, 'data', 'داده رفاهی برای دانلود وجود ندارد')}
+            >
+              <FileDownIcon className="size-4" />
+              دانلود داده رفاه
+            </Button>
+            <Button
+              size="sm"
+              variant="outline"
+              className="h-10"
+              onClick={() => handleDownload(null, 'all', 'localStorage خالی است')}
+            >
+              <FileDownIcon className="size-4" />
+              دانلود همه داده‌ها
+            </Button>
+          </div>
+          <p className="text-[10px] leading-relaxed text-grey-400">
+            اگر داده برای ارسال به‌صورت متن طولانی است، فایل JSON را دانلود کنید و همان فایل را بفرستید.
+          </p>
 
           {/* Raw key list */}
           <div className="divide-y divide-grey-100 rounded-lg border border-grey-100">
