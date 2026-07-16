@@ -10,6 +10,7 @@ import {
   PlusIcon,
   FileBarChartIcon,
   CalendarPlusIcon,
+  DatabaseIcon,
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
@@ -66,9 +67,17 @@ export default function DashboardPage() {
         title="دوره ارزیابی فعالی وجود ندارد"
         description="برای شروع، یک دوره ارزیابی ایجاد و آن را فعال کنید."
         action={
-          <Button asChild>
-            <Link href="/periods">مدیریت دوره‌ها</Link>
-          </Button>
+          <div className="flex flex-col items-center gap-2">
+            <Button asChild>
+              <Link href="/periods">مدیریت دوره‌ها</Link>
+            </Button>
+            <Button asChild variant="outline">
+              <Link href="/sample-data">
+                <DatabaseIcon className="size-4" />
+                استفاده از داده نمونه
+              </Link>
+            </Button>
+          </div>
         }
       />
     );
@@ -189,6 +198,13 @@ export default function DashboardPage() {
           </Link>
         </Button>
       </div>
+
+      <Button asChild variant="outline" className="h-11 w-full">
+        <Link href="/sample-data">
+          <DatabaseIcon className="size-4" />
+          استفاده از داده نمونه
+        </Link>
+      </Button>
     </div>
   );
 }

@@ -29,54 +29,15 @@ import { BackHeader } from '@/components/welfare/BackHeader';
 import { KEYS } from '@/lib/welfare/storage';
 import { AUTH_KEY } from '@/lib/auth/session';
 import { toPersianDigits } from '@/lib/welfare/format';
+import {
+  WELFARE_KEYS,
+  BACKUP_KEY,
+  tryParse,
+  parseBundle,
+  applyBundle,
+  restoreBackup,
+} from '@/lib/welfare/deviceData';
 import { cn } from '@/lib/utils';
-
-/** Keys that make up the "welfare only" bundle (the app's own data + auth flag). */
-const WELFARE_KEYS = [KEYS.periods, KEYS.submissions, KEYS.seeded, AUTH_KEY];
-
-/** Where a one-time snapshot of the admin's own storage is kept before a load. */
-const BACKUP_KEY = 'welfare_data_backup';
-
-/** Normalize a bundle value to its parsed form (handles both bundle shapes). */
-function ensureParsed(value) {
-  return typeof value === 'string' ? tryParse(value) : value;
-}
-
-/**
- * Reconstruct the raw localStorage string for a key, matching how the app
- * itself stores it: `auth_token` is a plain string, everything else is JSON.
- */
-function rawForWrite(key, value) {
-  const parsed = ensureParsed(value);
-  if (key === AUTH_KEY) return String(parsed);
-  return JSON.stringify(parsed);
-}
-
-/** Validate a pasted bundle: must be a JSON object of key → value. */
-function parseBundle(text) {
-  const trimmed = text.trim();
-  if (!trimmed) return { error: 'ابتدا داده کاربر را وارد کنید.' };
-  let data;
-  try {
-    data = JSON.parse(trimmed);
-  } catch {
-    return { error: 'JSON نامعتبر است. داده کپی‌شده را کامل و بدون تغییر بچسبانید.' };
-  }
-  if (!data || typeof data !== 'object' || Array.isArray(data)) {
-    return { error: 'ساختار داده معتبر نیست؛ باید یک شیء از کلید/مقدار باشد.' };
-  }
-  return { data };
-}
-
-/** Parse a stored string as JSON, falling back to the raw string when it isn't JSON. */
-function tryParse(value) {
-  if (typeof value !== 'string') return value;
-  try {
-    return JSON.parse(value);
-  } catch {
-    return value;
-  }
-}
 
 /** Turn a (possibly parsed) value into a readable, pretty-printed string. */
 function pretty(value) {
@@ -268,30 +229,10 @@ export default function DataPage() {
 
   // Replace this device's storage with the user's data (backing ours up first).
   const confirmLoad = () => {
-    const data = pendingLoad;
-    if (!data) return;
+    if (!pendingLoad) return;
     try {
-      // 1. Snapshot the admin's own storage once (exact raw strings) for restore.
-      if (!localStorage.getItem(BACKUP_KEY)) {
-        const backup = {};
-        for (let i = 0; i < localStorage.length; i += 1) {
-          const key = localStorage.key(i);
-          if (key == null || key === BACKUP_KEY) continue;
-          backup[key] = localStorage.getItem(key) ?? '';
-        }
-        localStorage.setItem(BACKUP_KEY, JSON.stringify(backup));
-      }
-      // 2. Clear the admin's welfare state so none of it lingers under the user's.
-      [KEYS.periods, KEYS.submissions, KEYS.seeded].forEach((k) => localStorage.removeItem(k));
-      // 3. Write the user's keys. auth_token is only touched if the bundle has it,
-      //    so the admin stays logged in and the app shell keeps working.
-      Object.entries(data).forEach(([key, value]) => {
-        if (key === BACKUP_KEY || key === KEYS.seeded) return;
-        localStorage.setItem(key, rawForWrite(key, value));
-      });
-      // 4. Force the seeded flag so WelfareProvider doesn't re-seed over the load.
-      localStorage.setItem(KEYS.seeded, JSON.stringify('1'));
-      // 5. Full reload so the provider re-hydrates from the replaced storage.
+      applyBundle(pendingLoad);
+      // Full reload so WelfareProvider re-hydrates from the replaced storage.
       window.location.href = '/dashboard';
     } catch (err) {
       console.error('[data] load failed', err);
@@ -301,21 +242,9 @@ export default function DataPage() {
   };
 
   // Restore the admin's original storage from the snapshot and reload.
-  const restoreBackup = () => {
-    const raw = localStorage.getItem(BACKUP_KEY);
-    if (!raw) return;
-    let backup;
-    try {
-      backup = JSON.parse(raw);
-    } catch {
-      toast.error('نسخه پشتیبان قابل خواندن نیست');
-      return;
-    }
-    localStorage.clear();
-    Object.entries(backup).forEach(([key, value]) => {
-      localStorage.setItem(key, typeof value === 'string' ? value : JSON.stringify(value));
-    });
-    window.location.href = '/dashboard';
+  const handleRestore = () => {
+    if (restoreBackup()) window.location.href = '/dashboard';
+    else toast.error('نسخه پشتیبان قابل خواندن نیست');
   };
 
   return (
@@ -329,7 +258,7 @@ export default function DataPage() {
             <p className="text-xs font-medium text-amber-800">در حال مشاهده داده کاربر</p>
             <p className="mt-0.5 text-[10px] text-amber-600">داده شما پشتیبان‌گیری شده است.</p>
           </div>
-          <Button size="sm" variant="outline" className="shrink-0" onClick={restoreBackup}>
+          <Button size="sm" variant="outline" className="shrink-0" onClick={handleRestore}>
             <RotateCcwIcon className="size-4" />
             بازگردانی داده من
           </Button>

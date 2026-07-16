@@ -1,0 +1,2949 @@
+{
+  "auth_token": "09113730037",
+  "welfare_periods": [
+    {
+      "id": "period_5d0a8d71-ce11-4b38-806d-d350a24996d3",
+      "title": "1403 کاشان",
+      "startDate": "2024-07-13",
+      "endDate": "2025-07-13",
+      "status": "draft",
+      "createdAt": "2026-07-13T08:16:37.511Z"
+    },
+    {
+      "id": "period_400709fd-2c89-4ff6-b144-2eb59ef09fa7",
+      "title": "ارزیابی 1404 کاشان",
+      "startDate": "2025-07-13",
+      "endDate": "2026-07-13",
+      "status": "completed",
+      "createdAt": "2026-07-13T08:33:46.521Z"
+    },
+    {
+      "id": "period_5f0d6cdf-27f1-4978-b47e-0b809b51f2a4",
+      "title": "ارزیابی 403 شهرکرد",
+      "startDate": "2024-07-14",
+      "endDate": "2025-07-14",
+      "status": "draft",
+      "createdAt": "2026-07-14T09:25:10.475Z"
+    },
+    {
+      "id": "period_7b36d59d-a034-4501-94e1-dc0d9364d85d",
+      "title": "ارزیابی 1404 دانشگاه شهرکرد",
+      "startDate": "2025-07-14",
+      "endDate": "2026-07-14",
+      "status": "active",
+      "createdAt": "2026-07-14T09:50:37.361Z"
+    }
+  ],
+  "welfare_seeded": "1",
+  "welfare_submissions": [
+    {
+      "id": "sub_97c789b3-5e59-49cd-bf94-e78bec34a2ea",
+      "periodId": "period_5d0a8d71-ce11-4b38-806d-d350a24996d3",
+      "indicatorId": "IND01",
+      "indicatorTitle": "عملکرد سرانه رفاهی",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-13T11:54:15.711Z",
+      "inputData": {
+        "transportation": 476500000000,
+        "food": 0,
+        "housing": 55200000000,
+        "accommodation": 0,
+        "insurance": 0,
+        "other": 26100000000,
+        "employees": 4935
+      },
+      "checklistInputs": null,
+      "resultUnit": "rial",
+      "calculatedValue": 113029381.96555218,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": null,
+        "max": 200000000,
+        "score": 1,
+        "description": "زیر ۲۰۰ میلیون ریال"
+      },
+      "finalScore": 1,
+      "weightedScore": 2,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «عملکرد سرانه رفاهی»:\n\nمقدار محاسبه‌شده: ۱۱۳,۰۲۹,۳۸۲ ریال\nامتیاز نهایی: ۱ از ۱۰\nاستاندارد مطلوب: بالای ۴۰۰ میلیون ریال\n\nارزیابی وضعیت:\nعملکرد در سطح ضعیف و نیازمند اقدامات فوری اصلاحی است.\n\nپیشنهادات بهبود:\nتدوین برنامه اصلاحی فوری و اولویت‌دهی به این شاخص در دوره آتی الزامی است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_a1921934-e0e9-4000-be49-c1df7f9f3c86",
+      "periodId": "period_5d0a8d71-ce11-4b38-806d-d350a24996d3",
+      "indicatorId": "IND02",
+      "indicatorTitle": "وضعیت سرانه تسهیلات بانکی",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-13T11:57:55.451Z",
+      "inputData": {
+        "facilities": 22486600000000,
+        "turnover": 14220000000000
+      },
+      "checklistInputs": null,
+      "resultUnit": "percent",
+      "calculatedValue": 158.1336146272855,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": 20,
+        "max": null,
+        "score": 10,
+        "description": "بالای 20"
+      },
+      "finalScore": 10,
+      "weightedScore": 20,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «وضعیت سرانه تسهیلات بانکی»:\n\nمقدار محاسبه‌شده: ۱۵۸.۱٪\nامتیاز نهایی: ۱۰ از ۱۰\nاستاندارد مطلوب: بالای ۲۰٪\n\nارزیابی وضعیت:\nعملکرد در سطح عالی و بالاتر از استاندارد مطلوب است.\n\nپیشنهادات بهبود:\nحفظ روند فعلی و مستندسازی تجربه‌های موفق برای تداوم عملکرد مطلوب توصیه می‌شود.",
+      "notes": ""
+    },
+    {
+      "id": "sub_80e27285-fbd8-4e37-99ac-59147625ae50",
+      "periodId": "period_5d0a8d71-ce11-4b38-806d-d350a24996d3",
+      "indicatorId": "IND03",
+      "indicatorTitle": "سرانه اسکان مراکز گردشگری",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-13T11:59:44.363Z",
+      "inputData": {
+        "beds": 0,
+        "employees": 4935
+      },
+      "checklistInputs": null,
+      "resultUnit": "number",
+      "calculatedValue": 0,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": null,
+        "max": 20,
+        "score": 1,
+        "description": "زیر 20"
+      },
+      "finalScore": 1,
+      "weightedScore": 2,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «سرانه اسکان مراکز گردشگری»:\n\nمقدار محاسبه‌شده: ۰\nامتیاز نهایی: ۱ از ۱۰\nاستاندارد مطلوب: بالای ۴۰\n\nارزیابی وضعیت:\nعملکرد در سطح ضعیف و نیازمند اقدامات فوری اصلاحی است.\n\nپیشنهادات بهبود:\nتدوین برنامه اصلاحی فوری و اولویت‌دهی به این شاخص در دوره آتی الزامی است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_91d55daf-9596-41fb-9bc3-f2992a2d3510",
+      "periodId": "period_5d0a8d71-ce11-4b38-806d-d350a24996d3",
+      "indicatorId": "IND04",
+      "indicatorTitle": "وضعیت مراکز اقامتی و گردشگری",
+      "indicatorType": "checklist",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-13T12:33:48.513Z",
+      "inputData": null,
+      "checklistInputs": {
+        "C1": {
+          "beds": "0"
+        },
+        "C2": {
+          "contracts": "0"
+        },
+        "C3": {
+          "paid": "0",
+          "total": "0"
+        },
+        "C5": {
+          "option": "weak"
+        },
+        "C6": {
+          "participants": "0",
+          "staff": "4935"
+        },
+        "C4": {
+          "weak": "0",
+          "medium": "0",
+          "good": "0"
+        }
+      },
+      "resultUnit": null,
+      "calculatedValue": null,
+      "percentage": 43,
+      "totalScore": 43,
+      "maxTotalScore": 100,
+      "criteriaScores": [
+        {
+          "criterionId": "C1",
+          "title": "میزان مشارکت در سامانه میهمانسرای وزارت بهداشت",
+          "maxScore": 15,
+          "measureType": "count",
+          "unit": "تخت",
+          "value": 0,
+          "optionLabel": null,
+          "bandDescription": "کمتر از ۵ تخت",
+          "filled": true,
+          "score": 5
+        },
+        {
+          "criterionId": "C2",
+          "title": "تعداد مراکز اقامتی طرف قرارداد",
+          "maxScore": 15,
+          "measureType": "count",
+          "unit": "قرارداد",
+          "value": 0,
+          "optionLabel": null,
+          "bandDescription": "۱ قرارداد",
+          "filled": true,
+          "score": 5
+        },
+        {
+          "criterionId": "C3",
+          "title": "سهم پرداختی کارمند",
+          "maxScore": 25,
+          "measureType": "ratio",
+          "unit": "٪",
+          "value": 0,
+          "optionLabel": null,
+          "bandDescription": "کمتر از ۳۰٪",
+          "filled": true,
+          "score": 25
+        },
+        {
+          "criterionId": "C4",
+          "title": "امکانات مراکز طرف اقامتی",
+          "maxScore": 20,
+          "measureType": "qualityAverage",
+          "unit": "امتیاز",
+          "value": 0,
+          "optionLabel": null,
+          "bandDescription": null,
+          "filled": true,
+          "score": 0
+        },
+        {
+          "criterionId": "C5",
+          "title": "عقد قرارداد با موسسات گردشگری",
+          "maxScore": 15,
+          "measureType": "select",
+          "unit": "",
+          "value": null,
+          "optionLabel": "ضعیف: کسر از حقوق و اقساط زیر ۱ سال",
+          "bandDescription": null,
+          "filled": true,
+          "score": 5
+        },
+        {
+          "criterionId": "C6",
+          "title": "برگزاری تورهای تفریحی زیارتی کوتاه‌مدت",
+          "maxScore": 10,
+          "measureType": "ratio",
+          "unit": "٪",
+          "value": 0,
+          "optionLabel": null,
+          "bandDescription": "کمتر از ۱۰٪",
+          "filled": true,
+          "score": 3
+        }
+      ],
+      "matchedBand": {
+        "min": 30,
+        "max": 50,
+        "score": 4,
+        "description": "30 تا 50"
+      },
+      "finalScore": 4,
+      "weightedScore": 8,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «وضعیت مراکز اقامتی و گردشگری»:\n\nمقدار محاسبه‌شده: ۴۳٪ (۴۳ از ۱۰۰ امتیاز)\nامتیاز نهایی: ۴ از ۱۰\nاستاندارد مطلوب: بالای ۷۰ امتیاز\n\nارزیابی وضعیت:\nعملکرد در سطح متوسط و نیازمند توجه جدی برای بهبود است.\n\nپیشنهادات بهبود:\nبازنگری در فرآیندها و افزایش تخصیص منابع برای بهبود شاخص ضروری است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_d3ec8179-4847-4e88-9a64-09e3f9ca297b",
+      "periodId": "period_5d0a8d71-ce11-4b38-806d-d350a24996d3",
+      "indicatorId": "IND05",
+      "indicatorTitle": "وضعیت خدمات بیمه تکمیلی",
+      "indicatorType": "checklist",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-13T11:57:46.842Z",
+      "inputData": null,
+      "checklistInputs": {
+        "C1": {
+          "covered": "1679",
+          "total": "4938"
+        },
+        "C2": {
+          "orgShare": "0",
+          "totalPremium": "500"
+        },
+        "C3": {
+          "franchise": "10"
+        },
+        "C4": {
+          "franchise": "10"
+        },
+        "C5": {
+          "option": "weak"
+        },
+        "C6": {
+          "option": "weak"
+        },
+        "C7": {
+          "option": "medium"
+        },
+        "C8": {
+          "days": "60"
+        }
+      },
+      "resultUnit": null,
+      "calculatedValue": null,
+      "percentage": 31,
+      "totalScore": 31,
+      "maxTotalScore": 100,
+      "criteriaScores": [
+        {
+          "criterionId": "C1",
+          "title": "نسبت بهره‌مندی کارکنان از خدمات بیمه تکمیلی",
+          "maxScore": 20,
+          "measureType": "ratio",
+          "unit": "٪",
+          "value": 34.001620089104904,
+          "optionLabel": null,
+          "bandDescription": "زیر ۴۰٪",
+          "filled": true,
+          "score": 5
+        },
+        {
+          "criterionId": "C2",
+          "title": "سهم سازمان از پرداخت حق بیمه تکمیلی",
+          "maxScore": 40,
+          "measureType": "ratio",
+          "unit": "٪",
+          "value": 0,
+          "optionLabel": null,
+          "bandDescription": "زیر ۳۵٪",
+          "filled": true,
+          "score": 10
+        },
+        {
+          "criterionId": "C3",
+          "title": "فرانشیز هزینه‌های بستری",
+          "maxScore": 5,
+          "measureType": "percent",
+          "unit": "٪",
+          "value": 10,
+          "optionLabel": null,
+          "bandDescription": "۱۰٪ تا ۲۰٪",
+          "filled": true,
+          "score": 3
+        },
+        {
+          "criterionId": "C4",
+          "title": "فرانشیز هزینه‌های پاراکلینیکی",
+          "maxScore": 5,
+          "measureType": "percent",
+          "unit": "٪",
+          "value": 10,
+          "optionLabel": null,
+          "bandDescription": "۱۰٪ تا ۳۰٪",
+          "filled": true,
+          "score": 3
+        },
+        {
+          "criterionId": "C5",
+          "title": "میزان پوشش تعهدات بیمه‌ای - دارو",
+          "maxScore": 5,
+          "measureType": "select",
+          "unit": "",
+          "value": null,
+          "optionLabel": "ضعیف: تا سقف ۲ میلیون تومان",
+          "bandDescription": null,
+          "filled": true,
+          "score": 1
+        },
+        {
+          "criterionId": "C6",
+          "title": "میزان پوشش تعهدات بیمه‌ای - ویزیت",
+          "maxScore": 5,
+          "measureType": "select",
+          "unit": "",
+          "value": null,
+          "optionLabel": "ضعیف: تا سقف ۲ میلیون تومان",
+          "bandDescription": null,
+          "filled": true,
+          "score": 1
+        },
+        {
+          "criterionId": "C7",
+          "title": "میزان پوشش تعهدات بیمه‌ای - دندانپزشکی",
+          "maxScore": 5,
+          "measureType": "select",
+          "unit": "",
+          "value": null,
+          "optionLabel": "متوسط: تا سقف ۵ میلیون تومان",
+          "bandDescription": null,
+          "filled": true,
+          "score": 3
+        },
+        {
+          "criterionId": "C8",
+          "title": "مدت‌زمان پرداخت خسارت",
+          "maxScore": 15,
+          "measureType": "count",
+          "unit": "روز",
+          "value": 60,
+          "optionLabel": null,
+          "bandDescription": "بیشتر از یک ماه",
+          "filled": true,
+          "score": 5
+        }
+      ],
+      "matchedBand": {
+        "min": 20,
+        "max": 40,
+        "score": 4,
+        "description": "20 تا 40"
+      },
+      "finalScore": 4,
+      "weightedScore": 8,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «وضعیت خدمات بیمه تکمیلی»:\n\nمقدار محاسبه‌شده: ۳۱٪ (۳۱ از ۱۰۰ امتیاز)\nامتیاز نهایی: ۴ از ۱۰\nاستاندارد مطلوب: بالای ۶۰ امتیاز\n\nارزیابی وضعیت:\nعملکرد در سطح متوسط و نیازمند توجه جدی برای بهبود است.\n\nپیشنهادات بهبود:\nبازنگری در فرآیندها و افزایش تخصیص منابع برای بهبود شاخص ضروری است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_1af17b00-4029-4bcb-9f83-b0d8c1617062",
+      "periodId": "period_5d0a8d71-ce11-4b38-806d-d350a24996d3",
+      "indicatorId": "IND06",
+      "indicatorTitle": "مشارکت کارکنان در برنامه‌های ورزشی",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-13T11:54:01.854Z",
+      "inputData": {
+        "users": 1000,
+        "employees": 4935
+      },
+      "checklistInputs": null,
+      "resultUnit": "percent",
+      "calculatedValue": 20.263424518743665,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": 20,
+        "max": 30,
+        "score": 7,
+        "description": "۲۰ تا ۳۰٪",
+        "assumed": true
+      },
+      "finalScore": 7,
+      "weightedScore": 14,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «مشارکت کارکنان در برنامه‌های ورزشی»:\n\nمقدار محاسبه‌شده: ۲۰.۳٪\nامتیاز نهایی: ۷ از ۱۰\nاستاندارد مطلوب: بالای ۳۰٪\n\nارزیابی وضعیت:\nعملکرد در سطح خوب اما نیازمند بهبود برای رسیدن به استاندارد مطلوب است.\n\nپیشنهادات بهبود:\nبا تقویت برنامه‌ریزی و تخصیص منابع بیشتر می‌توان به استاندارد مطلوب دست یافت.",
+      "notes": ""
+    },
+    {
+      "id": "sub_92f386d7-1cd0-4dd7-af12-0059b175abc0",
+      "periodId": "period_5d0a8d71-ce11-4b38-806d-d350a24996d3",
+      "indicatorId": "IND07",
+      "indicatorTitle": "وضعیت فعالیت‌های ورزشی",
+      "indicatorType": "checklist",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-13T11:51:23.904Z",
+      "inputData": null,
+      "checklistInputs": {
+        "C1": {
+          "disciplines": "6"
+        },
+        "C2": {
+          "participants": "140",
+          "total": "4935"
+        },
+        "C3": {
+          "rank": "38"
+        },
+        "C4": {
+          "medalPoints": "8"
+        }
+      },
+      "resultUnit": null,
+      "calculatedValue": null,
+      "percentage": 45,
+      "totalScore": 45,
+      "maxTotalScore": 100,
+      "criteriaScores": [
+        {
+          "criterionId": "C1",
+          "title": "رشته‌های ورزشی فعال",
+          "maxScore": 10,
+          "measureType": "count",
+          "unit": "رشته",
+          "value": 6,
+          "optionLabel": null,
+          "bandDescription": "بالاتر از ۵ رشته",
+          "filled": true,
+          "score": 10
+        },
+        {
+          "criterionId": "C2",
+          "title": "وضعیت ورزش همگانی",
+          "maxScore": 20,
+          "measureType": "ratio",
+          "unit": "٪",
+          "value": 2.8368794326241136,
+          "optionLabel": null,
+          "bandDescription": "زیر ۳۰٪",
+          "filled": true,
+          "score": 5
+        },
+        {
+          "criterionId": "C3",
+          "title": "ورزش قهرمانی - جایگاه المپیاد",
+          "maxScore": 35,
+          "measureType": "count",
+          "unit": "رتبه",
+          "value": 38,
+          "optionLabel": null,
+          "bandDescription": "بالاتر از ۲۰",
+          "filled": true,
+          "score": 10
+        },
+        {
+          "criterionId": "C4",
+          "title": "ورزش قهرمانی - امتیاز مدال‌ها",
+          "maxScore": 35,
+          "measureType": "count",
+          "unit": "امتیاز",
+          "value": 8,
+          "optionLabel": null,
+          "bandDescription": "۸ تا ۱۰ امتیاز",
+          "filled": true,
+          "score": 20
+        }
+      ],
+      "matchedBand": {
+        "min": 30,
+        "max": 50,
+        "score": 4,
+        "description": "30 تا 50"
+      },
+      "finalScore": 4,
+      "weightedScore": 8,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «وضعیت فعالیت‌های ورزشی»:\n\nمقدار محاسبه‌شده: ۴۵٪ (۴۵ از ۱۰۰ امتیاز)\nامتیاز نهایی: ۴ از ۱۰\nاستاندارد مطلوب: بالای ۷۰ امتیاز\n\nارزیابی وضعیت:\nعملکرد در سطح متوسط و نیازمند توجه جدی برای بهبود است.\n\nپیشنهادات بهبود:\nبازنگری در فرآیندها و افزایش تخصیص منابع برای بهبود شاخص ضروری است.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل ۳ امتیاز کاهش داشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_9264fb61-3f91-42d8-90d6-e51ca6e3569b",
+      "periodId": "period_5d0a8d71-ce11-4b38-806d-d350a24996d3",
+      "indicatorId": "IND08",
+      "indicatorTitle": "سرانه عملکرد ورزشی",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-13T11:53:19.651Z",
+      "inputData": {
+        "sportsBudget": 19650000000,
+        "employees": 4935
+      },
+      "checklistInputs": null,
+      "resultUnit": "rial",
+      "calculatedValue": 3981762.9179331306,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": null,
+        "max": 20000000,
+        "score": 1,
+        "description": "زیر ۲۰ میلیون ریال",
+        "assumed": true
+      },
+      "finalScore": 1,
+      "weightedScore": 2,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «سرانه عملکرد ورزشی»:\n\nمقدار محاسبه‌شده: ۳,۹۸۱,۷۶۳ ریال\nامتیاز نهایی: ۱ از ۱۰\nاستاندارد مطلوب: بالای ۵ میلیون ریال (فرضی)\n\nارزیابی وضعیت:\nعملکرد در سطح ضعیف و نیازمند اقدامات فوری اصلاحی است.\n\nپیشنهادات بهبود:\nتدوین برنامه اصلاحی فوری و اولویت‌دهی به این شاخص در دوره آتی الزامی است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_018da859-fa30-42c7-acf8-56409d1b3ebd",
+      "periodId": "period_5d0a8d71-ce11-4b38-806d-d350a24996d3",
+      "indicatorId": "IND09",
+      "indicatorTitle": "سرانه فضای ورزشی",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-13T11:52:17.468Z",
+      "inputData": {
+        "area": 4615,
+        "employees": 4926
+      },
+      "checklistInputs": null,
+      "resultUnit": "area",
+      "calculatedValue": 0.9368656110434429,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": 0.7,
+        "max": 1,
+        "score": 7,
+        "description": "۰.۷ تا ۱ مترمربع"
+      },
+      "finalScore": 7,
+      "weightedScore": 14,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «سرانه فضای ورزشی»:\n\nمقدار محاسبه‌شده: ۰.۹۴ مترمربع\nامتیاز نهایی: ۷ از ۱۰\nاستاندارد مطلوب: بالای ۱ مترمربع\n\nارزیابی وضعیت:\nعملکرد در سطح خوب اما نیازمند بهبود برای رسیدن به استاندارد مطلوب است.\n\nپیشنهادات بهبود:\nبا تقویت برنامه‌ریزی و تخصیص منابع بیشتر می‌توان به استاندارد مطلوب دست یافت.",
+      "notes": ""
+    },
+    {
+      "id": "sub_74e9eb2f-f620-4537-8e49-ee2c5f33bd3f",
+      "periodId": "period_5d0a8d71-ce11-4b38-806d-d350a24996d3",
+      "indicatorId": "IND10",
+      "indicatorTitle": "بهره‌مندی کارکنان از خدمات مهدکودک",
+      "indicatorType": "direct",
+      "weight": 0,
+      "status": "submitted",
+      "submittedAt": "2026-07-13T11:56:50.381Z",
+      "inputData": {
+        "usingMothers": 17,
+        "totalMothers": 589
+      },
+      "checklistInputs": null,
+      "resultUnit": "percent",
+      "calculatedValue": 2.886247877758913,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": null,
+        "max": 30,
+        "score": 1,
+        "description": "زیر 30"
+      },
+      "finalScore": 1,
+      "weightedScore": 0,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «بهره‌مندی کارکنان از خدمات مهدکودک»:\n\nمقدار محاسبه‌شده: ۲.۹٪\nامتیاز نهایی: ۱ از ۱۰\nاستاندارد مطلوب: بالای ۷۰٪\n\nارزیابی وضعیت:\nعملکرد در سطح ضعیف و نیازمند اقدامات فوری اصلاحی است.\n\nپیشنهادات بهبود:\nتدوین برنامه اصلاحی فوری و اولویت‌دهی به این شاخص در دوره آتی الزامی است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_9769ef8b-42af-474b-b864-a6daa822e5e0",
+      "periodId": "period_5d0a8d71-ce11-4b38-806d-d350a24996d3",
+      "indicatorId": "IND11",
+      "indicatorTitle": "درصد مراکز دارای مهدکودک",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-13T11:52:04.029Z",
+      "inputData": {
+        "existing": 1,
+        "required": 12
+      },
+      "checklistInputs": null,
+      "resultUnit": "percent",
+      "calculatedValue": 8.333333333333332,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": null,
+        "max": 30,
+        "score": 1,
+        "description": "زیر 30"
+      },
+      "finalScore": 1,
+      "weightedScore": 2,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «درصد مراکز دارای مهدکودک»:\n\nمقدار محاسبه‌شده: ۸.۳٪\nامتیاز نهایی: ۱ از ۱۰\nاستاندارد مطلوب: بالای ۷۰٪\n\nارزیابی وضعیت:\nعملکرد در سطح ضعیف و نیازمند اقدامات فوری اصلاحی است.\n\nپیشنهادات بهبود:\nتدوین برنامه اصلاحی فوری و اولویت‌دهی به این شاخص در دوره آتی الزامی است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_447e547c-54c8-4b4d-948c-cd20d76dc14e",
+      "periodId": "period_5d0a8d71-ce11-4b38-806d-d350a24996d3",
+      "indicatorId": "IND12",
+      "indicatorTitle": "وضعیت پایش سلامت کارکنان",
+      "indicatorType": "checklist",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-13T11:56:15.334Z",
+      "inputData": null,
+      "checklistInputs": {
+        "C1": {
+          "option": "not"
+        },
+        "C2": {
+          "total": "4500",
+          "records": "0"
+        },
+        "C3": {
+          "programs": "0"
+        }
+      },
+      "resultUnit": null,
+      "calculatedValue": null,
+      "percentage": 20,
+      "totalScore": 20,
+      "maxTotalScore": 100,
+      "criteriaScores": [
+        {
+          "criterionId": "C1",
+          "title": "تشکیل کمیته سلامت کارکنان",
+          "maxScore": 20,
+          "measureType": "select",
+          "unit": "",
+          "value": null,
+          "optionLabel": "تشکیل نشده",
+          "bandDescription": null,
+          "filled": true,
+          "score": 0
+        },
+        {
+          "criterionId": "C2",
+          "title": "تشکیل پرونده سلامت کارکنان",
+          "maxScore": 50,
+          "measureType": "ratio",
+          "unit": "٪",
+          "value": 0,
+          "optionLabel": null,
+          "bandDescription": "زیر ۳۰٪",
+          "filled": true,
+          "score": 10
+        },
+        {
+          "criterionId": "C3",
+          "title": "تعداد سنجش‌های سلامت",
+          "maxScore": 30,
+          "measureType": "count",
+          "unit": "برنامه",
+          "value": 0,
+          "optionLabel": null,
+          "bandDescription": "کمتر از ۲ برنامه",
+          "filled": true,
+          "score": 10
+        }
+      ],
+      "matchedBand": {
+        "min": null,
+        "max": 25,
+        "score": 1,
+        "description": "زیر 25"
+      },
+      "finalScore": 1,
+      "weightedScore": 2,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «وضعیت پایش سلامت کارکنان»:\n\nمقدار محاسبه‌شده: ۲۰٪ (۲۰ از ۱۰۰ امتیاز)\nامتیاز نهایی: ۱ از ۱۰\nاستاندارد مطلوب: بالای ۷۵٪\n\nارزیابی وضعیت:\nعملکرد در سطح ضعیف و نیازمند اقدامات فوری اصلاحی است.\n\nپیشنهادات بهبود:\nتدوین برنامه اصلاحی فوری و اولویت‌دهی به این شاخص در دوره آتی الزامی است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_d48096a1-f05b-41d3-b5cb-769b398df7e8",
+      "periodId": "period_5d0a8d71-ce11-4b38-806d-d350a24996d3",
+      "indicatorId": "IND13",
+      "indicatorTitle": "وضعیت تخصیص تسهیلات مسکن",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-13T11:51:40.816Z",
+      "inputData": {
+        "units": 0,
+        "employees": 4938
+      },
+      "checklistInputs": null,
+      "resultUnit": "percent",
+      "calculatedValue": 0,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": null,
+        "max": 10,
+        "score": 1,
+        "description": "زیر ۱۰٪"
+      },
+      "finalScore": 1,
+      "weightedScore": 2,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «وضعیت تخصیص تسهیلات مسکن»:\n\nمقدار محاسبه‌شده: ۰٪\nامتیاز نهایی: ۱ از ۱۰\nاستاندارد مطلوب: بالای ۵۰٪\n\nارزیابی وضعیت:\nعملکرد در سطح ضعیف و نیازمند اقدامات فوری اصلاحی است.\n\nپیشنهادات بهبود:\nتدوین برنامه اصلاحی فوری و اولویت‌دهی به این شاخص در دوره آتی الزامی است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_08499a5e-6f10-4495-a067-84c1337eafb7",
+      "periodId": "period_400709fd-2c89-4ff6-b144-2eb59ef09fa7",
+      "indicatorId": "IND01",
+      "indicatorTitle": "عملکرد سرانه رفاهی",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-13T12:10:05.766Z",
+      "inputData": {
+        "transportation": 511000000000,
+        "food": 0,
+        "housing": 57000000000,
+        "accommodation": 0,
+        "insurance": 0,
+        "other": 50700000000,
+        "employees": 4926
+      },
+      "checklistInputs": null,
+      "resultUnit": "rial",
+      "calculatedValue": 125598863.17498985,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": null,
+        "max": 200000000,
+        "score": 1,
+        "description": "زیر ۲۰۰ میلیون ریال"
+      },
+      "finalScore": 1,
+      "weightedScore": 2,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «عملکرد سرانه رفاهی»:\n\nمقدار محاسبه‌شده: ۱۲۵,۵۹۸,۸۶۳ ریال\nامتیاز نهایی: ۱ از ۱۰\nاستاندارد مطلوب: بالای ۴۰۰ میلیون ریال\n\nارزیابی وضعیت:\nعملکرد در سطح ضعیف و نیازمند اقدامات فوری اصلاحی است.\n\nپیشنهادات بهبود:\nتدوین برنامه اصلاحی فوری و اولویت‌دهی به این شاخص در دوره آتی الزامی است.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل تغییری نداشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_98570e3e-b462-4d44-8135-c1518288dcd6",
+      "periodId": "period_400709fd-2c89-4ff6-b144-2eb59ef09fa7",
+      "indicatorId": "IND02",
+      "indicatorTitle": "وضعیت سرانه تسهیلات بانکی",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-13T12:09:22.429Z",
+      "inputData": {
+        "facilities": 3596500000000,
+        "turnover": 19920000000000
+      },
+      "checklistInputs": null,
+      "resultUnit": "percent",
+      "calculatedValue": 18.054718875502008,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": 15,
+        "max": 20,
+        "score": 7,
+        "description": "15 تا 20"
+      },
+      "finalScore": 7,
+      "weightedScore": 14,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «وضعیت سرانه تسهیلات بانکی»:\n\nمقدار محاسبه‌شده: ۱۸.۱٪\nامتیاز نهایی: ۷ از ۱۰\nاستاندارد مطلوب: بالای ۲۰٪\n\nارزیابی وضعیت:\nعملکرد در سطح خوب اما نیازمند بهبود برای رسیدن به استاندارد مطلوب است.\n\nپیشنهادات بهبود:\nبا تقویت برنامه‌ریزی و تخصیص منابع بیشتر می‌توان به استاندارد مطلوب دست یافت.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل ۳ امتیاز کاهش داشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_75768dbb-ee35-42e3-ad3a-08f73324dafd",
+      "periodId": "period_400709fd-2c89-4ff6-b144-2eb59ef09fa7",
+      "indicatorId": "IND03",
+      "indicatorTitle": "سرانه اسکان مراکز گردشگری",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-13T12:09:31.796Z",
+      "inputData": {
+        "beds": 836,
+        "employees": 4926
+      },
+      "checklistInputs": null,
+      "resultUnit": "number",
+      "calculatedValue": 169.71173365814047,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": 40,
+        "max": null,
+        "score": 10,
+        "description": "بالای 40"
+      },
+      "finalScore": 10,
+      "weightedScore": 20,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «سرانه اسکان مراکز گردشگری»:\n\nمقدار محاسبه‌شده: ۱۶۹.۷۱\nامتیاز نهایی: ۱۰ از ۱۰\nاستاندارد مطلوب: بالای ۴۰\n\nارزیابی وضعیت:\nعملکرد در سطح عالی و بالاتر از استاندارد مطلوب است.\n\nپیشنهادات بهبود:\nحفظ روند فعلی و مستندسازی تجربه‌های موفق برای تداوم عملکرد مطلوب توصیه می‌شود.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل ۹ امتیاز بهبود داشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_e7798b26-50ee-49f1-a1e1-2616a4b62037",
+      "periodId": "period_400709fd-2c89-4ff6-b144-2eb59ef09fa7",
+      "indicatorId": "IND04",
+      "indicatorTitle": "وضعیت مراکز اقامتی و گردشگری",
+      "indicatorType": "checklist",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-13T12:37:14.182Z",
+      "inputData": null,
+      "checklistInputs": {
+        "C1": {
+          "beds": "8"
+        },
+        "C5": {
+          "option": "weak"
+        },
+        "C6": {
+          "staff": "4926",
+          "participants": "0"
+        },
+        "C2": {
+          "contracts": "0"
+        },
+        "C3": {
+          "paid": "0",
+          "total": "0"
+        },
+        "C4": {
+          "weak": "0",
+          "medium": "0",
+          "good": "0"
+        }
+      },
+      "resultUnit": null,
+      "calculatedValue": null,
+      "percentage": 48,
+      "totalScore": 48,
+      "maxTotalScore": 100,
+      "criteriaScores": [
+        {
+          "criterionId": "C1",
+          "title": "میزان مشارکت در سامانه میهمانسرای وزارت بهداشت",
+          "maxScore": 15,
+          "measureType": "count",
+          "unit": "تخت",
+          "value": 8,
+          "optionLabel": null,
+          "bandDescription": "۵ تا ۱۰ تخت",
+          "filled": true,
+          "score": 10
+        },
+        {
+          "criterionId": "C2",
+          "title": "تعداد مراکز اقامتی طرف قرارداد",
+          "maxScore": 15,
+          "measureType": "count",
+          "unit": "قرارداد",
+          "value": 0,
+          "optionLabel": null,
+          "bandDescription": "۱ قرارداد",
+          "filled": true,
+          "score": 5
+        },
+        {
+          "criterionId": "C3",
+          "title": "سهم پرداختی کارمند",
+          "maxScore": 25,
+          "measureType": "ratio",
+          "unit": "٪",
+          "value": 0,
+          "optionLabel": null,
+          "bandDescription": "کمتر از ۳۰٪",
+          "filled": true,
+          "score": 25
+        },
+        {
+          "criterionId": "C4",
+          "title": "امکانات مراکز طرف اقامتی",
+          "maxScore": 20,
+          "measureType": "qualityAverage",
+          "unit": "امتیاز",
+          "value": 0,
+          "optionLabel": null,
+          "bandDescription": null,
+          "filled": true,
+          "score": 0
+        },
+        {
+          "criterionId": "C5",
+          "title": "عقد قرارداد با موسسات گردشگری",
+          "maxScore": 15,
+          "measureType": "select",
+          "unit": "",
+          "value": null,
+          "optionLabel": "ضعیف: کسر از حقوق و اقساط زیر ۱ سال",
+          "bandDescription": null,
+          "filled": true,
+          "score": 5
+        },
+        {
+          "criterionId": "C6",
+          "title": "برگزاری تورهای تفریحی زیارتی کوتاه‌مدت",
+          "maxScore": 10,
+          "measureType": "ratio",
+          "unit": "٪",
+          "value": 0,
+          "optionLabel": null,
+          "bandDescription": "کمتر از ۱۰٪",
+          "filled": true,
+          "score": 3
+        }
+      ],
+      "matchedBand": {
+        "min": 30,
+        "max": 50,
+        "score": 4,
+        "description": "30 تا 50"
+      },
+      "finalScore": 4,
+      "weightedScore": 8,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «وضعیت مراکز اقامتی و گردشگری»:\n\nمقدار محاسبه‌شده: ۴۸٪ (۴۸ از ۱۰۰ امتیاز)\nامتیاز نهایی: ۴ از ۱۰\nاستاندارد مطلوب: بالای ۷۰ امتیاز\n\nارزیابی وضعیت:\nعملکرد در سطح متوسط و نیازمند توجه جدی برای بهبود است.\n\nپیشنهادات بهبود:\nبازنگری در فرآیندها و افزایش تخصیص منابع برای بهبود شاخص ضروری است.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل تغییری نداشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_d8a30f3e-5e39-431a-b4b0-0bc3689c7e8f",
+      "periodId": "period_400709fd-2c89-4ff6-b144-2eb59ef09fa7",
+      "indicatorId": "IND05",
+      "indicatorTitle": "وضعیت خدمات بیمه تکمیلی",
+      "indicatorType": "checklist",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-13T12:09:48.539Z",
+      "inputData": null,
+      "checklistInputs": {
+        "C1": {
+          "covered": "1853",
+          "total": "4926"
+        },
+        "C3": {
+          "franchise": "10"
+        },
+        "C4": {
+          "franchise": "10"
+        },
+        "C5": {
+          "option": "weak"
+        },
+        "C6": {
+          "option": "weak"
+        },
+        "C7": {
+          "option": "medium"
+        },
+        "C8": {
+          "days": "40"
+        },
+        "C2": {
+          "orgShare": "0",
+          "totalPremium": "100"
+        }
+      },
+      "resultUnit": null,
+      "calculatedValue": null,
+      "percentage": 31,
+      "totalScore": 31,
+      "maxTotalScore": 100,
+      "criteriaScores": [
+        {
+          "criterionId": "C1",
+          "title": "نسبت بهره‌مندی کارکنان از خدمات بیمه تکمیلی",
+          "maxScore": 20,
+          "measureType": "ratio",
+          "unit": "٪",
+          "value": 37.616727568006496,
+          "optionLabel": null,
+          "bandDescription": "زیر ۴۰٪",
+          "filled": true,
+          "score": 5
+        },
+        {
+          "criterionId": "C2",
+          "title": "سهم سازمان از پرداخت حق بیمه تکمیلی",
+          "maxScore": 40,
+          "measureType": "ratio",
+          "unit": "٪",
+          "value": 0,
+          "optionLabel": null,
+          "bandDescription": "زیر ۳۵٪",
+          "filled": true,
+          "score": 10
+        },
+        {
+          "criterionId": "C3",
+          "title": "فرانشیز هزینه‌های بستری",
+          "maxScore": 5,
+          "measureType": "percent",
+          "unit": "٪",
+          "value": 10,
+          "optionLabel": null,
+          "bandDescription": "۱۰٪ تا ۲۰٪",
+          "filled": true,
+          "score": 3
+        },
+        {
+          "criterionId": "C4",
+          "title": "فرانشیز هزینه‌های پاراکلینیکی",
+          "maxScore": 5,
+          "measureType": "percent",
+          "unit": "٪",
+          "value": 10,
+          "optionLabel": null,
+          "bandDescription": "۱۰٪ تا ۳۰٪",
+          "filled": true,
+          "score": 3
+        },
+        {
+          "criterionId": "C5",
+          "title": "میزان پوشش تعهدات بیمه‌ای - دارو",
+          "maxScore": 5,
+          "measureType": "select",
+          "unit": "",
+          "value": null,
+          "optionLabel": "ضعیف: تا سقف ۲ میلیون تومان",
+          "bandDescription": null,
+          "filled": true,
+          "score": 1
+        },
+        {
+          "criterionId": "C6",
+          "title": "میزان پوشش تعهدات بیمه‌ای - ویزیت",
+          "maxScore": 5,
+          "measureType": "select",
+          "unit": "",
+          "value": null,
+          "optionLabel": "ضعیف: تا سقف ۲ میلیون تومان",
+          "bandDescription": null,
+          "filled": true,
+          "score": 1
+        },
+        {
+          "criterionId": "C7",
+          "title": "میزان پوشش تعهدات بیمه‌ای - دندانپزشکی",
+          "maxScore": 5,
+          "measureType": "select",
+          "unit": "",
+          "value": null,
+          "optionLabel": "متوسط: تا سقف ۵ میلیون تومان",
+          "bandDescription": null,
+          "filled": true,
+          "score": 3
+        },
+        {
+          "criterionId": "C8",
+          "title": "مدت‌زمان پرداخت خسارت",
+          "maxScore": 15,
+          "measureType": "count",
+          "unit": "روز",
+          "value": 40,
+          "optionLabel": null,
+          "bandDescription": "بیشتر از یک ماه",
+          "filled": true,
+          "score": 5
+        }
+      ],
+      "matchedBand": {
+        "min": 20,
+        "max": 40,
+        "score": 4,
+        "description": "20 تا 40"
+      },
+      "finalScore": 4,
+      "weightedScore": 8,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «وضعیت خدمات بیمه تکمیلی»:\n\nمقدار محاسبه‌شده: ۳۱٪ (۳۱ از ۱۰۰ امتیاز)\nامتیاز نهایی: ۴ از ۱۰\nاستاندارد مطلوب: بالای ۶۰ امتیاز\n\nارزیابی وضعیت:\nعملکرد در سطح متوسط و نیازمند توجه جدی برای بهبود است.\n\nپیشنهادات بهبود:\nبازنگری در فرآیندها و افزایش تخصیص منابع برای بهبود شاخص ضروری است.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل تغییری نداشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_cef7c18d-c329-437e-b77e-81ae6053ca1e",
+      "periodId": "period_400709fd-2c89-4ff6-b144-2eb59ef09fa7",
+      "indicatorId": "IND06",
+      "indicatorTitle": "مشارکت کارکنان در برنامه‌های ورزشی",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-13T12:05:20.941Z",
+      "inputData": {
+        "users": 2000,
+        "employees": 4926
+      },
+      "checklistInputs": null,
+      "resultUnit": "percent",
+      "calculatedValue": 40.60089321965083,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": 30,
+        "max": null,
+        "score": 10,
+        "description": "بالای ۳۰٪"
+      },
+      "finalScore": 10,
+      "weightedScore": 20,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «مشارکت کارکنان در برنامه‌های ورزشی»:\n\nمقدار محاسبه‌شده: ۴۰.۶٪\nامتیاز نهایی: ۱۰ از ۱۰\nاستاندارد مطلوب: بالای ۳۰٪\n\nارزیابی وضعیت:\nعملکرد در سطح عالی و بالاتر از استاندارد مطلوب است.\n\nپیشنهادات بهبود:\nحفظ روند فعلی و مستندسازی تجربه‌های موفق برای تداوم عملکرد مطلوب توصیه می‌شود.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل ۳ امتیاز بهبود داشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_699e5304-6537-4fdc-be30-d73b3c03879e",
+      "periodId": "period_400709fd-2c89-4ff6-b144-2eb59ef09fa7",
+      "indicatorId": "IND07",
+      "indicatorTitle": "وضعیت فعالیت‌های ورزشی",
+      "indicatorType": "checklist",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-13T09:21:45.131Z",
+      "inputData": null,
+      "checklistInputs": {
+        "C1": {
+          "disciplines": "6"
+        },
+        "C2": {
+          "participants": "2000",
+          "total": "4926"
+        },
+        "C3": {
+          "rank": "27"
+        },
+        "C4": {
+          "medalPoints": "16"
+        }
+      },
+      "resultUnit": null,
+      "calculatedValue": null,
+      "percentage": 65,
+      "totalScore": 65,
+      "maxTotalScore": 100,
+      "criteriaScores": [
+        {
+          "criterionId": "C1",
+          "title": "رشته‌های ورزشی فعال",
+          "maxScore": 10,
+          "measureType": "count",
+          "unit": "رشته",
+          "value": 6,
+          "optionLabel": null,
+          "bandDescription": "بالاتر از ۵ رشته",
+          "filled": true,
+          "score": 10
+        },
+        {
+          "criterionId": "C2",
+          "title": "وضعیت ورزش همگانی",
+          "maxScore": 20,
+          "measureType": "ratio",
+          "unit": "٪",
+          "value": 40.60089321965083,
+          "optionLabel": null,
+          "bandDescription": "۳۰٪ تا ۵۰٪",
+          "filled": true,
+          "score": 10
+        },
+        {
+          "criterionId": "C3",
+          "title": "ورزش قهرمانی - جایگاه المپیاد",
+          "maxScore": 35,
+          "measureType": "count",
+          "unit": "رتبه",
+          "value": 27,
+          "optionLabel": null,
+          "bandDescription": "بالاتر از ۲۰",
+          "filled": true,
+          "score": 10
+        },
+        {
+          "criterionId": "C4",
+          "title": "ورزش قهرمانی - امتیاز مدال‌ها",
+          "maxScore": 35,
+          "measureType": "count",
+          "unit": "امتیاز",
+          "value": 16,
+          "optionLabel": null,
+          "bandDescription": "امتیاز ۱۰ و بالاتر",
+          "filled": true,
+          "score": 35
+        }
+      ],
+      "matchedBand": {
+        "min": 50,
+        "max": 70,
+        "score": 7,
+        "description": "50 تا 70"
+      },
+      "finalScore": 7,
+      "weightedScore": 14,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «وضعیت فعالیت‌های ورزشی»:\n\nمقدار محاسبه‌شده: ۶۵٪ (۶۵ از ۱۰۰ امتیاز)\nامتیاز نهایی: ۷ از ۱۰\nاستاندارد مطلوب: بالای ۷۰ امتیاز\n\nارزیابی وضعیت:\nعملکرد در سطح خوب اما نیازمند بهبود برای رسیدن به استاندارد مطلوب است.\n\nپیشنهادات بهبود:\nبا تقویت برنامه‌ریزی و تخصیص منابع بیشتر می‌توان به استاندارد مطلوب دست یافت.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل ۳ امتیاز بهبود داشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_bbda148c-1ec8-4b75-8bb9-184eb0f54250",
+      "periodId": "period_400709fd-2c89-4ff6-b144-2eb59ef09fa7",
+      "indicatorId": "IND08",
+      "indicatorTitle": "سرانه عملکرد ورزشی",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-13T12:06:25.002Z",
+      "inputData": {
+        "sportsBudget": 23000000000,
+        "employees": 4926
+      },
+      "checklistInputs": null,
+      "resultUnit": "rial",
+      "calculatedValue": 4669102.720259845,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": null,
+        "max": 20000000,
+        "score": 1,
+        "description": "زیر ۲۰ میلیون ریال",
+        "assumed": true
+      },
+      "finalScore": 1,
+      "weightedScore": 2,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «سرانه عملکرد ورزشی»:\n\nمقدار محاسبه‌شده: ۴,۶۶۹,۱۰۳ ریال\nامتیاز نهایی: ۱ از ۱۰\nاستاندارد مطلوب: بالای ۵ میلیون ریال (فرضی)\n\nارزیابی وضعیت:\nعملکرد در سطح ضعیف و نیازمند اقدامات فوری اصلاحی است.\n\nپیشنهادات بهبود:\nتدوین برنامه اصلاحی فوری و اولویت‌دهی به این شاخص در دوره آتی الزامی است.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل تغییری نداشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_f7c2dfcc-0f02-4cc5-871d-19bba119c6d4",
+      "periodId": "period_400709fd-2c89-4ff6-b144-2eb59ef09fa7",
+      "indicatorId": "IND09",
+      "indicatorTitle": "سرانه فضای ورزشی",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-13T12:06:16.491Z",
+      "inputData": {
+        "area": 4615,
+        "employees": 4926
+      },
+      "checklistInputs": null,
+      "resultUnit": "area",
+      "calculatedValue": 0.9368656110434429,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": 0.7,
+        "max": 1,
+        "score": 7,
+        "description": "۰.۷ تا ۱ مترمربع"
+      },
+      "finalScore": 7,
+      "weightedScore": 14,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «سرانه فضای ورزشی»:\n\nمقدار محاسبه‌شده: ۰.۹۴ مترمربع\nامتیاز نهایی: ۷ از ۱۰\nاستاندارد مطلوب: بالای ۱ مترمربع\n\nارزیابی وضعیت:\nعملکرد در سطح خوب اما نیازمند بهبود برای رسیدن به استاندارد مطلوب است.\n\nپیشنهادات بهبود:\nبا تقویت برنامه‌ریزی و تخصیص منابع بیشتر می‌توان به استاندارد مطلوب دست یافت.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل تغییری نداشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_d73ca721-4011-4954-b4e6-f8f8b7f90e5d",
+      "periodId": "period_400709fd-2c89-4ff6-b144-2eb59ef09fa7",
+      "indicatorId": "IND10",
+      "indicatorTitle": "بهره‌مندی کارکنان از خدمات مهدکودک",
+      "indicatorType": "direct",
+      "weight": 0,
+      "status": "submitted",
+      "submittedAt": "2026-07-13T12:06:01.494Z",
+      "inputData": {
+        "usingMothers": 30,
+        "totalMothers": 597
+      },
+      "checklistInputs": null,
+      "resultUnit": "percent",
+      "calculatedValue": 5.025125628140704,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": null,
+        "max": 30,
+        "score": 1,
+        "description": "زیر 30"
+      },
+      "finalScore": 1,
+      "weightedScore": 0,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «بهره‌مندی کارکنان از خدمات مهدکودک»:\n\nمقدار محاسبه‌شده: ۵٪\nامتیاز نهایی: ۱ از ۱۰\nاستاندارد مطلوب: بالای ۷۰٪\n\nارزیابی وضعیت:\nعملکرد در سطح ضعیف و نیازمند اقدامات فوری اصلاحی است.\n\nپیشنهادات بهبود:\nتدوین برنامه اصلاحی فوری و اولویت‌دهی به این شاخص در دوره آتی الزامی است.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل تغییری نداشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_d5c5ad20-415f-4df7-967b-37d4d6300ffa",
+      "periodId": "period_400709fd-2c89-4ff6-b144-2eb59ef09fa7",
+      "indicatorId": "IND11",
+      "indicatorTitle": "درصد مراکز دارای مهدکودک",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-13T12:05:54.438Z",
+      "inputData": {
+        "existing": 2,
+        "required": 12
+      },
+      "checklistInputs": null,
+      "resultUnit": "percent",
+      "calculatedValue": 16.666666666666664,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": null,
+        "max": 30,
+        "score": 1,
+        "description": "زیر 30"
+      },
+      "finalScore": 1,
+      "weightedScore": 2,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «درصد مراکز دارای مهدکودک»:\n\nمقدار محاسبه‌شده: ۱۶.۷٪\nامتیاز نهایی: ۱ از ۱۰\nاستاندارد مطلوب: بالای ۷۰٪\n\nارزیابی وضعیت:\nعملکرد در سطح ضعیف و نیازمند اقدامات فوری اصلاحی است.\n\nپیشنهادات بهبود:\nتدوین برنامه اصلاحی فوری و اولویت‌دهی به این شاخص در دوره آتی الزامی است.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل تغییری نداشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_aeff3cbc-0969-4e91-a5a6-0339c094f677",
+      "periodId": "period_400709fd-2c89-4ff6-b144-2eb59ef09fa7",
+      "indicatorId": "IND12",
+      "indicatorTitle": "وضعیت پایش سلامت کارکنان",
+      "indicatorType": "checklist",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-13T12:05:45.496Z",
+      "inputData": null,
+      "checklistInputs": {
+        "C1": {
+          "option": "not"
+        },
+        "C2": {
+          "total": "4926",
+          "records": "0"
+        },
+        "C3": {
+          "programs": "0"
+        }
+      },
+      "resultUnit": null,
+      "calculatedValue": null,
+      "percentage": 20,
+      "totalScore": 20,
+      "maxTotalScore": 100,
+      "criteriaScores": [
+        {
+          "criterionId": "C1",
+          "title": "تشکیل کمیته سلامت کارکنان",
+          "maxScore": 20,
+          "measureType": "select",
+          "unit": "",
+          "value": null,
+          "optionLabel": "تشکیل نشده",
+          "bandDescription": null,
+          "filled": true,
+          "score": 0
+        },
+        {
+          "criterionId": "C2",
+          "title": "تشکیل پرونده سلامت کارکنان",
+          "maxScore": 50,
+          "measureType": "ratio",
+          "unit": "٪",
+          "value": 0,
+          "optionLabel": null,
+          "bandDescription": "زیر ۳۰٪",
+          "filled": true,
+          "score": 10
+        },
+        {
+          "criterionId": "C3",
+          "title": "تعداد سنجش‌های سلامت",
+          "maxScore": 30,
+          "measureType": "count",
+          "unit": "برنامه",
+          "value": 0,
+          "optionLabel": null,
+          "bandDescription": "کمتر از ۲ برنامه",
+          "filled": true,
+          "score": 10
+        }
+      ],
+      "matchedBand": {
+        "min": null,
+        "max": 25,
+        "score": 1,
+        "description": "زیر 25"
+      },
+      "finalScore": 1,
+      "weightedScore": 2,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «وضعیت پایش سلامت کارکنان»:\n\nمقدار محاسبه‌شده: ۲۰٪ (۲۰ از ۱۰۰ امتیاز)\nامتیاز نهایی: ۱ از ۱۰\nاستاندارد مطلوب: بالای ۷۵٪\n\nارزیابی وضعیت:\nعملکرد در سطح ضعیف و نیازمند اقدامات فوری اصلاحی است.\n\nپیشنهادات بهبود:\nتدوین برنامه اصلاحی فوری و اولویت‌دهی به این شاخص در دوره آتی الزامی است.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل تغییری نداشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_1128fa21-f764-4195-bfdf-f4b7b5cffd3c",
+      "periodId": "period_400709fd-2c89-4ff6-b144-2eb59ef09fa7",
+      "indicatorId": "IND13",
+      "indicatorTitle": "وضعیت تخصیص تسهیلات مسکن",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-13T12:05:27.827Z",
+      "inputData": {
+        "units": 0,
+        "employees": 4926
+      },
+      "checklistInputs": null,
+      "resultUnit": "percent",
+      "calculatedValue": 0,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": null,
+        "max": 10,
+        "score": 1,
+        "description": "زیر ۱۰٪"
+      },
+      "finalScore": 1,
+      "weightedScore": 2,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «وضعیت تخصیص تسهیلات مسکن»:\n\nمقدار محاسبه‌شده: ۰٪\nامتیاز نهایی: ۱ از ۱۰\nاستاندارد مطلوب: بالای ۵۰٪\n\nارزیابی وضعیت:\nعملکرد در سطح ضعیف و نیازمند اقدامات فوری اصلاحی است.\n\nپیشنهادات بهبود:\nتدوین برنامه اصلاحی فوری و اولویت‌دهی به این شاخص در دوره آتی الزامی است.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل تغییری نداشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_54cbe4c8-702b-4c60-915e-c9afb5a707dc",
+      "periodId": "period_5f0d6cdf-27f1-4978-b47e-0b809b51f2a4",
+      "indicatorId": "IND01",
+      "indicatorTitle": "عملکرد سرانه رفاهی",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-14T09:28:36.446Z",
+      "inputData": {
+        "transportation": 156000000000,
+        "food": 390000000000,
+        "housing": 312000000000,
+        "accommodation": 0,
+        "insurance": 0,
+        "other": 90000000000,
+        "employees": 7755
+      },
+      "checklistInputs": null,
+      "resultUnit": "rial",
+      "calculatedValue": 122243713.73307544,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": null,
+        "max": 200000000,
+        "score": 1,
+        "description": "زیر ۲۰۰ میلیون ریال"
+      },
+      "finalScore": 1,
+      "weightedScore": 2,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «عملکرد سرانه رفاهی»:\n\nمقدار محاسبه‌شده: ۱۲۲,۲۴۳,۷۱۴ ریال\nامتیاز نهایی: ۱ از ۱۰\nاستاندارد مطلوب: بالای ۴۰۰ میلیون ریال\n\nارزیابی وضعیت:\nعملکرد در سطح ضعیف و نیازمند اقدامات فوری اصلاحی است.\n\nپیشنهادات بهبود:\nتدوین برنامه اصلاحی فوری و اولویت‌دهی به این شاخص در دوره آتی الزامی است.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل تغییری نداشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_4a3ff645-3ec8-4802-804d-3bf8eccb6890",
+      "periodId": "period_5f0d6cdf-27f1-4978-b47e-0b809b51f2a4",
+      "indicatorId": "IND02",
+      "indicatorTitle": "وضعیت سرانه تسهیلات بانکی",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-14T09:29:21.691Z",
+      "inputData": {
+        "facilities": 3400000000000,
+        "turnover": 58010000000000
+      },
+      "checklistInputs": null,
+      "resultUnit": "percent",
+      "calculatedValue": 5.861058438200311,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": null,
+        "max": 10,
+        "score": 1,
+        "description": "زیر 10"
+      },
+      "finalScore": 1,
+      "weightedScore": 2,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «وضعیت سرانه تسهیلات بانکی»:\n\nمقدار محاسبه‌شده: ۵.۹٪\nامتیاز نهایی: ۱ از ۱۰\nاستاندارد مطلوب: بالای ۲۰٪\n\nارزیابی وضعیت:\nعملکرد در سطح ضعیف و نیازمند اقدامات فوری اصلاحی است.\n\nپیشنهادات بهبود:\nتدوین برنامه اصلاحی فوری و اولویت‌دهی به این شاخص در دوره آتی الزامی است.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل ۶ امتیاز کاهش داشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_b323df13-5f00-4a7a-9842-cc5916bd74f2",
+      "periodId": "period_5f0d6cdf-27f1-4978-b47e-0b809b51f2a4",
+      "indicatorId": "IND03",
+      "indicatorTitle": "سرانه اسکان مراکز گردشگری",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-14T09:29:43.259Z",
+      "inputData": {
+        "beds": 55000,
+        "employees": 7755
+      },
+      "checklistInputs": null,
+      "resultUnit": "number",
+      "calculatedValue": 7092.198581560284,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": 40,
+        "max": null,
+        "score": 10,
+        "description": "بالای 40"
+      },
+      "finalScore": 10,
+      "weightedScore": 20,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «سرانه اسکان مراکز گردشگری»:\n\nمقدار محاسبه‌شده: ۷,۰۹۲.۲\nامتیاز نهایی: ۱۰ از ۱۰\nاستاندارد مطلوب: بالای ۴۰\n\nارزیابی وضعیت:\nعملکرد در سطح عالی و بالاتر از استاندارد مطلوب است.\n\nپیشنهادات بهبود:\nحفظ روند فعلی و مستندسازی تجربه‌های موفق برای تداوم عملکرد مطلوب توصیه می‌شود.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل تغییری نداشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_4ce146ec-c24c-4ad0-9c6c-2892b98694ca",
+      "periodId": "period_5f0d6cdf-27f1-4978-b47e-0b809b51f2a4",
+      "indicatorId": "IND04",
+      "indicatorTitle": "وضعیت مراکز اقامتی و گردشگری",
+      "indicatorType": "checklist",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-14T09:49:49.051Z",
+      "inputData": null,
+      "checklistInputs": {
+        "C1": {
+          "beds": "12"
+        },
+        "C2": {
+          "contracts": "1"
+        },
+        "C3": {
+          "paid": "25",
+          "total": "100"
+        },
+        "C4": {
+          "medium": "2"
+        },
+        "C5": {
+          "option": "weak"
+        },
+        "C6": {
+          "staff": "7755",
+          "participants": "400"
+        }
+      },
+      "resultUnit": null,
+      "calculatedValue": null,
+      "percentage": 68,
+      "totalScore": 68,
+      "maxTotalScore": 100,
+      "criteriaScores": [
+        {
+          "criterionId": "C1",
+          "title": "میزان مشارکت در سامانه میهمانسرای وزارت بهداشت",
+          "maxScore": 15,
+          "measureType": "count",
+          "unit": "تخت",
+          "value": 12,
+          "optionLabel": null,
+          "bandDescription": "بالاتر از ۱۰ تخت",
+          "filled": true,
+          "score": 15
+        },
+        {
+          "criterionId": "C2",
+          "title": "تعداد مراکز اقامتی طرف قرارداد",
+          "maxScore": 15,
+          "measureType": "count",
+          "unit": "قرارداد",
+          "value": 1,
+          "optionLabel": null,
+          "bandDescription": "۱ قرارداد",
+          "filled": true,
+          "score": 5
+        },
+        {
+          "criterionId": "C3",
+          "title": "سهم پرداختی کارمند",
+          "maxScore": 25,
+          "measureType": "ratio",
+          "unit": "٪",
+          "value": 25,
+          "optionLabel": null,
+          "bandDescription": "کمتر از ۳۰٪",
+          "filled": true,
+          "score": 25
+        },
+        {
+          "criterionId": "C4",
+          "title": "امکانات مراکز طرف اقامتی",
+          "maxScore": 20,
+          "measureType": "qualityAverage",
+          "unit": "امتیاز",
+          "value": 15,
+          "optionLabel": null,
+          "bandDescription": null,
+          "filled": true,
+          "score": 15
+        },
+        {
+          "criterionId": "C5",
+          "title": "عقد قرارداد با موسسات گردشگری",
+          "maxScore": 15,
+          "measureType": "select",
+          "unit": "",
+          "value": null,
+          "optionLabel": "ضعیف: کسر از حقوق و اقساط زیر ۱ سال",
+          "bandDescription": null,
+          "filled": true,
+          "score": 5
+        },
+        {
+          "criterionId": "C6",
+          "title": "برگزاری تورهای تفریحی زیارتی کوتاه‌مدت",
+          "maxScore": 10,
+          "measureType": "ratio",
+          "unit": "٪",
+          "value": 5.157962604771115,
+          "optionLabel": null,
+          "bandDescription": "کمتر از ۱۰٪",
+          "filled": true,
+          "score": 3
+        }
+      ],
+      "matchedBand": {
+        "min": 50,
+        "max": 70,
+        "score": 7,
+        "description": "50 تا 70"
+      },
+      "finalScore": 7,
+      "weightedScore": 14,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «وضعیت مراکز اقامتی و گردشگری»:\n\nمقدار محاسبه‌شده: ۶۸٪ (۶۸ از ۱۰۰ امتیاز)\nامتیاز نهایی: ۷ از ۱۰\nاستاندارد مطلوب: بالای ۷۰ امتیاز\n\nارزیابی وضعیت:\nعملکرد در سطح خوب اما نیازمند بهبود برای رسیدن به استاندارد مطلوب است.\n\nپیشنهادات بهبود:\nبا تقویت برنامه‌ریزی و تخصیص منابع بیشتر می‌توان به استاندارد مطلوب دست یافت.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل ۳ امتیاز بهبود داشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_4d56e710-f7fb-4975-939b-4de651946838",
+      "periodId": "period_5f0d6cdf-27f1-4978-b47e-0b809b51f2a4",
+      "indicatorId": "IND05",
+      "indicatorTitle": "وضعیت خدمات بیمه تکمیلی",
+      "indicatorType": "checklist",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-14T09:47:23.611Z",
+      "inputData": null,
+      "checklistInputs": {
+        "C1": {
+          "covered": "1095",
+          "total": "7755"
+        },
+        "C2": {
+          "orgShare": "0",
+          "totalPremium": "12645300000000"
+        },
+        "C3": {
+          "franchise": "10"
+        },
+        "C4": {
+          "franchise": "10"
+        },
+        "C5": {
+          "option": "medium"
+        },
+        "C6": {
+          "option": "medium"
+        },
+        "C7": {
+          "option": "good"
+        },
+        "C8": {
+          "days": "29"
+        }
+      },
+      "resultUnit": null,
+      "calculatedValue": null,
+      "percentage": 42,
+      "totalScore": 42,
+      "maxTotalScore": 100,
+      "criteriaScores": [
+        {
+          "criterionId": "C1",
+          "title": "نسبت بهره‌مندی کارکنان از خدمات بیمه تکمیلی",
+          "maxScore": 20,
+          "measureType": "ratio",
+          "unit": "٪",
+          "value": 14.119922630560927,
+          "optionLabel": null,
+          "bandDescription": "زیر ۴۰٪",
+          "filled": true,
+          "score": 5
+        },
+        {
+          "criterionId": "C2",
+          "title": "سهم سازمان از پرداخت حق بیمه تکمیلی",
+          "maxScore": 40,
+          "measureType": "ratio",
+          "unit": "٪",
+          "value": 0,
+          "optionLabel": null,
+          "bandDescription": "زیر ۳۵٪",
+          "filled": true,
+          "score": 10
+        },
+        {
+          "criterionId": "C3",
+          "title": "فرانشیز هزینه‌های بستری",
+          "maxScore": 5,
+          "measureType": "percent",
+          "unit": "٪",
+          "value": 10,
+          "optionLabel": null,
+          "bandDescription": "۱۰٪ تا ۲۰٪",
+          "filled": true,
+          "score": 3
+        },
+        {
+          "criterionId": "C4",
+          "title": "فرانشیز هزینه‌های پاراکلینیکی",
+          "maxScore": 5,
+          "measureType": "percent",
+          "unit": "٪",
+          "value": 10,
+          "optionLabel": null,
+          "bandDescription": "۱۰٪ تا ۳۰٪",
+          "filled": true,
+          "score": 3
+        },
+        {
+          "criterionId": "C5",
+          "title": "میزان پوشش تعهدات بیمه‌ای - دارو",
+          "maxScore": 5,
+          "measureType": "select",
+          "unit": "",
+          "value": null,
+          "optionLabel": "متوسط: تا سقف ۴ میلیون تومان",
+          "bandDescription": null,
+          "filled": true,
+          "score": 3
+        },
+        {
+          "criterionId": "C6",
+          "title": "میزان پوشش تعهدات بیمه‌ای - ویزیت",
+          "maxScore": 5,
+          "measureType": "select",
+          "unit": "",
+          "value": null,
+          "optionLabel": "متوسط: تا سقف ۴ میلیون تومان",
+          "bandDescription": null,
+          "filled": true,
+          "score": 3
+        },
+        {
+          "criterionId": "C7",
+          "title": "میزان پوشش تعهدات بیمه‌ای - دندانپزشکی",
+          "maxScore": 5,
+          "measureType": "select",
+          "unit": "",
+          "value": null,
+          "optionLabel": "خوب: تا سقف ۸ میلیون تومان",
+          "bandDescription": null,
+          "filled": true,
+          "score": 5
+        },
+        {
+          "criterionId": "C8",
+          "title": "مدت‌زمان پرداخت خسارت",
+          "maxScore": 15,
+          "measureType": "count",
+          "unit": "روز",
+          "value": 29,
+          "optionLabel": null,
+          "bandDescription": "یک تا چهار هفته",
+          "filled": true,
+          "score": 10
+        }
+      ],
+      "matchedBand": {
+        "min": 40,
+        "max": 60,
+        "score": 7,
+        "description": "40 تا 60"
+      },
+      "finalScore": 7,
+      "weightedScore": 14,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «وضعیت خدمات بیمه تکمیلی»:\n\nمقدار محاسبه‌شده: ۴۲٪ (۴۲ از ۱۰۰ امتیاز)\nامتیاز نهایی: ۷ از ۱۰\nاستاندارد مطلوب: بالای ۶۰ امتیاز\n\nارزیابی وضعیت:\nعملکرد در سطح خوب اما نیازمند بهبود برای رسیدن به استاندارد مطلوب است.\n\nپیشنهادات بهبود:\nبا تقویت برنامه‌ریزی و تخصیص منابع بیشتر می‌توان به استاندارد مطلوب دست یافت.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل ۳ امتیاز بهبود داشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_19a469b8-bf12-4ead-a2e2-f5da65bdb0eb",
+      "periodId": "period_5f0d6cdf-27f1-4978-b47e-0b809b51f2a4",
+      "indicatorId": "IND06",
+      "indicatorTitle": "مشارکت کارکنان در برنامه‌های ورزشی",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-14T09:39:57.771Z",
+      "inputData": {
+        "users": 2800,
+        "employees": 7755
+      },
+      "checklistInputs": null,
+      "resultUnit": "percent",
+      "calculatedValue": 36.10573823339781,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": 30,
+        "max": null,
+        "score": 10,
+        "description": "بالای ۳۰٪"
+      },
+      "finalScore": 10,
+      "weightedScore": 20,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «مشارکت کارکنان در برنامه‌های ورزشی»:\n\nمقدار محاسبه‌شده: ۳۶.۱٪\nامتیاز نهایی: ۱۰ از ۱۰\nاستاندارد مطلوب: بالای ۳۰٪\n\nارزیابی وضعیت:\nعملکرد در سطح عالی و بالاتر از استاندارد مطلوب است.\n\nپیشنهادات بهبود:\nحفظ روند فعلی و مستندسازی تجربه‌های موفق برای تداوم عملکرد مطلوب توصیه می‌شود.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل تغییری نداشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_ff7dd670-952b-41c8-a70d-f6749202394a",
+      "periodId": "period_5f0d6cdf-27f1-4978-b47e-0b809b51f2a4",
+      "indicatorId": "IND07",
+      "indicatorTitle": "وضعیت فعالیت‌های ورزشی",
+      "indicatorType": "checklist",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-14T09:47:55.866Z",
+      "inputData": null,
+      "checklistInputs": {
+        "C1": {
+          "disciplines": "8"
+        },
+        "C2": {
+          "participants": "2800",
+          "total": "7755"
+        },
+        "C3": {
+          "rank": "23"
+        },
+        "C4": {
+          "medalPoints": "35"
+        }
+      },
+      "resultUnit": null,
+      "calculatedValue": null,
+      "percentage": 65,
+      "totalScore": 65,
+      "maxTotalScore": 100,
+      "criteriaScores": [
+        {
+          "criterionId": "C1",
+          "title": "رشته‌های ورزشی فعال",
+          "maxScore": 10,
+          "measureType": "count",
+          "unit": "رشته",
+          "value": 8,
+          "optionLabel": null,
+          "bandDescription": "بالاتر از ۵ رشته",
+          "filled": true,
+          "score": 10
+        },
+        {
+          "criterionId": "C2",
+          "title": "وضعیت ورزش همگانی",
+          "maxScore": 20,
+          "measureType": "ratio",
+          "unit": "٪",
+          "value": 36.10573823339781,
+          "optionLabel": null,
+          "bandDescription": "۳۰٪ تا ۵۰٪",
+          "filled": true,
+          "score": 10
+        },
+        {
+          "criterionId": "C3",
+          "title": "ورزش قهرمانی - جایگاه المپیاد",
+          "maxScore": 35,
+          "measureType": "count",
+          "unit": "رتبه",
+          "value": 23,
+          "optionLabel": null,
+          "bandDescription": "بالاتر از ۲۰",
+          "filled": true,
+          "score": 10
+        },
+        {
+          "criterionId": "C4",
+          "title": "ورزش قهرمانی - امتیاز مدال‌ها",
+          "maxScore": 35,
+          "measureType": "count",
+          "unit": "امتیاز",
+          "value": 35,
+          "optionLabel": null,
+          "bandDescription": "امتیاز ۱۰ و بالاتر",
+          "filled": true,
+          "score": 35
+        }
+      ],
+      "matchedBand": {
+        "min": 50,
+        "max": 70,
+        "score": 7,
+        "description": "50 تا 70"
+      },
+      "finalScore": 7,
+      "weightedScore": 14,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «وضعیت فعالیت‌های ورزشی»:\n\nمقدار محاسبه‌شده: ۶۵٪ (۶۵ از ۱۰۰ امتیاز)\nامتیاز نهایی: ۷ از ۱۰\nاستاندارد مطلوب: بالای ۷۰ امتیاز\n\nارزیابی وضعیت:\nعملکرد در سطح خوب اما نیازمند بهبود برای رسیدن به استاندارد مطلوب است.\n\nپیشنهادات بهبود:\nبا تقویت برنامه‌ریزی و تخصیص منابع بیشتر می‌توان به استاندارد مطلوب دست یافت.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل ۳ امتیاز بهبود داشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_2fd9a0b0-11ad-41ca-a329-6561caf38890",
+      "periodId": "period_5f0d6cdf-27f1-4978-b47e-0b809b51f2a4",
+      "indicatorId": "IND08",
+      "indicatorTitle": "سرانه عملکرد ورزشی",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-14T09:41:33.555Z",
+      "inputData": {
+        "sportsBudget": 110000000000,
+        "employees": 7755
+      },
+      "checklistInputs": null,
+      "resultUnit": "rial",
+      "calculatedValue": 14184397.163120568,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": null,
+        "max": 20000000,
+        "score": 1,
+        "description": "زیر ۲۰ میلیون ریال",
+        "assumed": true
+      },
+      "finalScore": 1,
+      "weightedScore": 2,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «سرانه عملکرد ورزشی»:\n\nمقدار محاسبه‌شده: ۱۴,۱۸۴,۳۹۷ ریال\nامتیاز نهایی: ۱ از ۱۰\nاستاندارد مطلوب: بالای ۵ میلیون ریال (فرضی)\n\nارزیابی وضعیت:\nعملکرد در سطح ضعیف و نیازمند اقدامات فوری اصلاحی است.\n\nپیشنهادات بهبود:\nتدوین برنامه اصلاحی فوری و اولویت‌دهی به این شاخص در دوره آتی الزامی است.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل تغییری نداشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_d3a88653-02d4-4877-8179-5766368b54e9",
+      "periodId": "period_5f0d6cdf-27f1-4978-b47e-0b809b51f2a4",
+      "indicatorId": "IND09",
+      "indicatorTitle": "سرانه فضای ورزشی",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-14T09:41:52.224Z",
+      "inputData": {
+        "area": 16000,
+        "employees": 7755
+      },
+      "checklistInputs": null,
+      "resultUnit": "area",
+      "calculatedValue": 2.0631850419084463,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": 1,
+        "max": null,
+        "score": 10,
+        "description": "بالای ۱ مترمربع"
+      },
+      "finalScore": 10,
+      "weightedScore": 20,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «سرانه فضای ورزشی»:\n\nمقدار محاسبه‌شده: ۲.۰۶ مترمربع\nامتیاز نهایی: ۱۰ از ۱۰\nاستاندارد مطلوب: بالای ۱ مترمربع\n\nارزیابی وضعیت:\nعملکرد در سطح عالی و بالاتر از استاندارد مطلوب است.\n\nپیشنهادات بهبود:\nحفظ روند فعلی و مستندسازی تجربه‌های موفق برای تداوم عملکرد مطلوب توصیه می‌شود.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل ۳ امتیاز بهبود داشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_3cc46edb-266f-4e3f-9b82-040e02fa5ae0",
+      "periodId": "period_5f0d6cdf-27f1-4978-b47e-0b809b51f2a4",
+      "indicatorId": "IND10",
+      "indicatorTitle": "بهره‌مندی کارکنان از خدمات مهدکودک",
+      "indicatorType": "direct",
+      "weight": 0,
+      "status": "submitted",
+      "submittedAt": "2026-07-14T09:42:15.788Z",
+      "inputData": {
+        "usingMothers": 30,
+        "totalMothers": 1528
+      },
+      "checklistInputs": null,
+      "resultUnit": "percent",
+      "calculatedValue": 1.963350785340314,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": null,
+        "max": 30,
+        "score": 1,
+        "description": "زیر 30"
+      },
+      "finalScore": 1,
+      "weightedScore": 0,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «بهره‌مندی کارکنان از خدمات مهدکودک»:\n\nمقدار محاسبه‌شده: ۲٪\nامتیاز نهایی: ۱ از ۱۰\nاستاندارد مطلوب: بالای ۷۰٪\n\nارزیابی وضعیت:\nعملکرد در سطح ضعیف و نیازمند اقدامات فوری اصلاحی است.\n\nپیشنهادات بهبود:\nتدوین برنامه اصلاحی فوری و اولویت‌دهی به این شاخص در دوره آتی الزامی است.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل تغییری نداشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_543d60c8-801c-4555-85e3-02f354556047",
+      "periodId": "period_5f0d6cdf-27f1-4978-b47e-0b809b51f2a4",
+      "indicatorId": "IND11",
+      "indicatorTitle": "درصد مراکز دارای مهدکودک",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-14T09:42:28.480Z",
+      "inputData": {
+        "existing": 2,
+        "required": 4
+      },
+      "checklistInputs": null,
+      "resultUnit": "percent",
+      "calculatedValue": 50,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": 50,
+        "max": 70,
+        "score": 7,
+        "description": "50 تا 70"
+      },
+      "finalScore": 7,
+      "weightedScore": 14,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «درصد مراکز دارای مهدکودک»:\n\nمقدار محاسبه‌شده: ۵۰٪\nامتیاز نهایی: ۷ از ۱۰\nاستاندارد مطلوب: بالای ۷۰٪\n\nارزیابی وضعیت:\nعملکرد در سطح خوب اما نیازمند بهبود برای رسیدن به استاندارد مطلوب است.\n\nپیشنهادات بهبود:\nبا تقویت برنامه‌ریزی و تخصیص منابع بیشتر می‌توان به استاندارد مطلوب دست یافت.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل ۶ امتیاز بهبود داشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_f8525c67-4b99-4572-b46a-5e3da727ef59",
+      "periodId": "period_5f0d6cdf-27f1-4978-b47e-0b809b51f2a4",
+      "indicatorId": "IND12",
+      "indicatorTitle": "وضعیت پایش سلامت کارکنان",
+      "indicatorType": "checklist",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-14T09:43:01.406Z",
+      "inputData": null,
+      "checklistInputs": {
+        "C1": {
+          "option": "established"
+        },
+        "C2": {
+          "records": "4950",
+          "total": "7755"
+        },
+        "C3": {
+          "programs": "8"
+        }
+      },
+      "resultUnit": null,
+      "calculatedValue": null,
+      "percentage": 100,
+      "totalScore": 100,
+      "maxTotalScore": 100,
+      "criteriaScores": [
+        {
+          "criterionId": "C1",
+          "title": "تشکیل کمیته سلامت کارکنان",
+          "maxScore": 20,
+          "measureType": "select",
+          "unit": "",
+          "value": null,
+          "optionLabel": "تشکیل شده",
+          "bandDescription": null,
+          "filled": true,
+          "score": 20
+        },
+        {
+          "criterionId": "C2",
+          "title": "تشکیل پرونده سلامت کارکنان",
+          "maxScore": 50,
+          "measureType": "ratio",
+          "unit": "٪",
+          "value": 63.829787234042556,
+          "optionLabel": null,
+          "bandDescription": "بالای ۵۰٪",
+          "filled": true,
+          "score": 50
+        },
+        {
+          "criterionId": "C3",
+          "title": "تعداد سنجش‌های سلامت",
+          "maxScore": 30,
+          "measureType": "count",
+          "unit": "برنامه",
+          "value": 8,
+          "optionLabel": null,
+          "bandDescription": "بالاتر از ۴ برنامه",
+          "filled": true,
+          "score": 30
+        }
+      ],
+      "matchedBand": {
+        "min": 75,
+        "max": null,
+        "score": 10,
+        "description": "بالای 75"
+      },
+      "finalScore": 10,
+      "weightedScore": 20,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «وضعیت پایش سلامت کارکنان»:\n\nمقدار محاسبه‌شده: ۱۰۰٪ (۱۰۰ از ۱۰۰ امتیاز)\nامتیاز نهایی: ۱۰ از ۱۰\nاستاندارد مطلوب: بالای ۷۵٪\n\nارزیابی وضعیت:\nعملکرد در سطح عالی و بالاتر از استاندارد مطلوب است.\n\nپیشنهادات بهبود:\nحفظ روند فعلی و مستندسازی تجربه‌های موفق برای تداوم عملکرد مطلوب توصیه می‌شود.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل ۹ امتیاز بهبود داشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_7e2e5d82-a466-4398-b19b-3e5a94e3172d",
+      "periodId": "period_5f0d6cdf-27f1-4978-b47e-0b809b51f2a4",
+      "indicatorId": "IND13",
+      "indicatorTitle": "وضعیت تخصیص تسهیلات مسکن",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-14T09:47:05.393Z",
+      "inputData": {
+        "units": 200,
+        "employees": 7755
+      },
+      "checklistInputs": null,
+      "resultUnit": "percent",
+      "calculatedValue": 2.5789813023855577,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": null,
+        "max": 10,
+        "score": 1,
+        "description": "زیر ۱۰٪"
+      },
+      "finalScore": 1,
+      "weightedScore": 2,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «وضعیت تخصیص تسهیلات مسکن»:\n\nمقدار محاسبه‌شده: ۲.۶٪\nامتیاز نهایی: ۱ از ۱۰\nاستاندارد مطلوب: بالای ۵۰٪\n\nارزیابی وضعیت:\nعملکرد در سطح ضعیف و نیازمند اقدامات فوری اصلاحی است.\n\nپیشنهادات بهبود:\nتدوین برنامه اصلاحی فوری و اولویت‌دهی به این شاخص در دوره آتی الزامی است.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل تغییری نداشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_c8bca66f-c3cc-450f-af19-8e79e1a5d279",
+      "periodId": "period_7b36d59d-a034-4501-94e1-dc0d9364d85d",
+      "indicatorId": "IND01",
+      "indicatorTitle": "عملکرد سرانه رفاهی",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-14T09:52:46.790Z",
+      "inputData": {
+        "transportation": 180000000000,
+        "food": 1699000000000,
+        "housing": 360000000000,
+        "accommodation": 0,
+        "insurance": 0,
+        "other": 400000000000,
+        "employees": 7796
+      },
+      "checklistInputs": null,
+      "resultUnit": "rial",
+      "calculatedValue": 338506926.62904054,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": 300000000,
+        "max": 400000000,
+        "score": 7,
+        "description": "۳۰۰ تا ۴۰۰ میلیون ریال"
+      },
+      "finalScore": 7,
+      "weightedScore": 14,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «عملکرد سرانه رفاهی»:\n\nمقدار محاسبه‌شده: ۳۳۸,۵۰۶,۹۲۷ ریال\nامتیاز نهایی: ۷ از ۱۰\nاستاندارد مطلوب: بالای ۴۰۰ میلیون ریال\n\nارزیابی وضعیت:\nعملکرد در سطح خوب اما نیازمند بهبود برای رسیدن به استاندارد مطلوب است.\n\nپیشنهادات بهبود:\nبا تقویت برنامه‌ریزی و تخصیص منابع بیشتر می‌توان به استاندارد مطلوب دست یافت.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل ۶ امتیاز بهبود داشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_c71e14f4-dfc8-4ce4-a867-43ce4a48fb74",
+      "periodId": "period_7b36d59d-a034-4501-94e1-dc0d9364d85d",
+      "indicatorId": "IND02",
+      "indicatorTitle": "وضعیت سرانه تسهیلات بانکی",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-14T09:53:16.691Z",
+      "inputData": {
+        "facilities": 3700000000000,
+        "turnover": 68501000000000
+      },
+      "checklistInputs": null,
+      "resultUnit": "percent",
+      "calculatedValue": 5.401381001737201,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": null,
+        "max": 10,
+        "score": 1,
+        "description": "زیر 10"
+      },
+      "finalScore": 1,
+      "weightedScore": 2,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «وضعیت سرانه تسهیلات بانکی»:\n\nمقدار محاسبه‌شده: ۵.۴٪\nامتیاز نهایی: ۱ از ۱۰\nاستاندارد مطلوب: بالای ۲۰٪\n\nارزیابی وضعیت:\nعملکرد در سطح ضعیف و نیازمند اقدامات فوری اصلاحی است.\n\nپیشنهادات بهبود:\nتدوین برنامه اصلاحی فوری و اولویت‌دهی به این شاخص در دوره آتی الزامی است.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل تغییری نداشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_804356aa-c629-4c02-b189-b2bd65c1cb2b",
+      "periodId": "period_7b36d59d-a034-4501-94e1-dc0d9364d85d",
+      "indicatorId": "IND03",
+      "indicatorTitle": "سرانه اسکان مراکز گردشگری",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-14T09:53:35.054Z",
+      "inputData": {
+        "beds": 55000,
+        "employees": 7796
+      },
+      "checklistInputs": null,
+      "resultUnit": "number",
+      "calculatedValue": 7054.899948691636,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": 40,
+        "max": null,
+        "score": 10,
+        "description": "بالای 40"
+      },
+      "finalScore": 10,
+      "weightedScore": 20,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «سرانه اسکان مراکز گردشگری»:\n\nمقدار محاسبه‌شده: ۷,۰۵۴.۹\nامتیاز نهایی: ۱۰ از ۱۰\nاستاندارد مطلوب: بالای ۴۰\n\nارزیابی وضعیت:\nعملکرد در سطح عالی و بالاتر از استاندارد مطلوب است.\n\nپیشنهادات بهبود:\nحفظ روند فعلی و مستندسازی تجربه‌های موفق برای تداوم عملکرد مطلوب توصیه می‌شود.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل تغییری نداشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_fe128ad5-c781-4266-8cad-d1729221cc7b",
+      "periodId": "period_7b36d59d-a034-4501-94e1-dc0d9364d85d",
+      "indicatorId": "IND04",
+      "indicatorTitle": "وضعیت مراکز اقامتی و گردشگری",
+      "indicatorType": "checklist",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-14T09:54:55.430Z",
+      "inputData": null,
+      "checklistInputs": {
+        "C1": {
+          "beds": "12"
+        },
+        "C2": {
+          "contracts": "2"
+        },
+        "C3": {
+          "paid": "25",
+          "total": "100"
+        },
+        "C4": {
+          "medium": "1"
+        },
+        "C5": {
+          "option": "weak"
+        },
+        "C6": {
+          "participants": "1500",
+          "staff": "7796"
+        }
+      },
+      "resultUnit": null,
+      "calculatedValue": null,
+      "percentage": 76,
+      "totalScore": 76,
+      "maxTotalScore": 100,
+      "criteriaScores": [
+        {
+          "criterionId": "C1",
+          "title": "میزان مشارکت در سامانه میهمانسرای وزارت بهداشت",
+          "maxScore": 15,
+          "measureType": "count",
+          "unit": "تخت",
+          "value": 12,
+          "optionLabel": null,
+          "bandDescription": "بالاتر از ۱۰ تخت",
+          "filled": true,
+          "score": 15
+        },
+        {
+          "criterionId": "C2",
+          "title": "تعداد مراکز اقامتی طرف قرارداد",
+          "maxScore": 15,
+          "measureType": "count",
+          "unit": "قرارداد",
+          "value": 2,
+          "optionLabel": null,
+          "bandDescription": "۲ تا ۳ قرارداد",
+          "filled": true,
+          "score": 10
+        },
+        {
+          "criterionId": "C3",
+          "title": "سهم پرداختی کارمند",
+          "maxScore": 25,
+          "measureType": "ratio",
+          "unit": "٪",
+          "value": 25,
+          "optionLabel": null,
+          "bandDescription": "کمتر از ۳۰٪",
+          "filled": true,
+          "score": 25
+        },
+        {
+          "criterionId": "C4",
+          "title": "امکانات مراکز طرف اقامتی",
+          "maxScore": 20,
+          "measureType": "qualityAverage",
+          "unit": "امتیاز",
+          "value": 15,
+          "optionLabel": null,
+          "bandDescription": null,
+          "filled": true,
+          "score": 15
+        },
+        {
+          "criterionId": "C5",
+          "title": "عقد قرارداد با موسسات گردشگری",
+          "maxScore": 15,
+          "measureType": "select",
+          "unit": "",
+          "value": null,
+          "optionLabel": "ضعیف: کسر از حقوق و اقساط زیر ۱ سال",
+          "bandDescription": null,
+          "filled": true,
+          "score": 5
+        },
+        {
+          "criterionId": "C6",
+          "title": "برگزاری تورهای تفریحی زیارتی کوتاه‌مدت",
+          "maxScore": 10,
+          "measureType": "ratio",
+          "unit": "٪",
+          "value": 19.240636223704463,
+          "optionLabel": null,
+          "bandDescription": "۱۰٪ تا ۲۰٪",
+          "filled": true,
+          "score": 6
+        }
+      ],
+      "matchedBand": {
+        "min": 70,
+        "max": null,
+        "score": 10,
+        "description": "بالای 70"
+      },
+      "finalScore": 10,
+      "weightedScore": 20,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «وضعیت مراکز اقامتی و گردشگری»:\n\nمقدار محاسبه‌شده: ۷۶٪ (۷۶ از ۱۰۰ امتیاز)\nامتیاز نهایی: ۱۰ از ۱۰\nاستاندارد مطلوب: بالای ۷۰ امتیاز\n\nارزیابی وضعیت:\nعملکرد در سطح عالی و بالاتر از استاندارد مطلوب است.\n\nپیشنهادات بهبود:\nحفظ روند فعلی و مستندسازی تجربه‌های موفق برای تداوم عملکرد مطلوب توصیه می‌شود.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل ۳ امتیاز بهبود داشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_ae06aa7c-1505-416a-8bfc-6b03f9663eca",
+      "periodId": "period_7b36d59d-a034-4501-94e1-dc0d9364d85d",
+      "indicatorId": "IND05",
+      "indicatorTitle": "وضعیت خدمات بیمه تکمیلی",
+      "indicatorType": "checklist",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-14T09:56:43.327Z",
+      "inputData": null,
+      "checklistInputs": {
+        "C1": {
+          "covered": "2191",
+          "total": "7796"
+        },
+        "C2": {
+          "orgShare": "8764000000000",
+          "totalPremium": "31572500000"
+        },
+        "C3": {
+          "franchise": "10"
+        },
+        "C4": {
+          "franchise": "10"
+        },
+        "C5": {
+          "option": "medium"
+        },
+        "C6": {
+          "option": "medium"
+        },
+        "C7": {
+          "option": "good"
+        },
+        "C8": {
+          "days": "29"
+        }
+      },
+      "resultUnit": null,
+      "calculatedValue": null,
+      "percentage": 72,
+      "totalScore": 72,
+      "maxTotalScore": 100,
+      "criteriaScores": [
+        {
+          "criterionId": "C1",
+          "title": "نسبت بهره‌مندی کارکنان از خدمات بیمه تکمیلی",
+          "maxScore": 20,
+          "measureType": "ratio",
+          "unit": "٪",
+          "value": 28.104155977424323,
+          "optionLabel": null,
+          "bandDescription": "زیر ۴۰٪",
+          "filled": true,
+          "score": 5
+        },
+        {
+          "criterionId": "C2",
+          "title": "سهم سازمان از پرداخت حق بیمه تکمیلی",
+          "maxScore": 40,
+          "measureType": "ratio",
+          "unit": "٪",
+          "value": 27758.333993190274,
+          "optionLabel": null,
+          "bandDescription": "بالای ۷۰٪",
+          "filled": true,
+          "score": 40
+        },
+        {
+          "criterionId": "C3",
+          "title": "فرانشیز هزینه‌های بستری",
+          "maxScore": 5,
+          "measureType": "percent",
+          "unit": "٪",
+          "value": 10,
+          "optionLabel": null,
+          "bandDescription": "۱۰٪ تا ۲۰٪",
+          "filled": true,
+          "score": 3
+        },
+        {
+          "criterionId": "C4",
+          "title": "فرانشیز هزینه‌های پاراکلینیکی",
+          "maxScore": 5,
+          "measureType": "percent",
+          "unit": "٪",
+          "value": 10,
+          "optionLabel": null,
+          "bandDescription": "۱۰٪ تا ۳۰٪",
+          "filled": true,
+          "score": 3
+        },
+        {
+          "criterionId": "C5",
+          "title": "میزان پوشش تعهدات بیمه‌ای - دارو",
+          "maxScore": 5,
+          "measureType": "select",
+          "unit": "",
+          "value": null,
+          "optionLabel": "متوسط: تا سقف ۴ میلیون تومان",
+          "bandDescription": null,
+          "filled": true,
+          "score": 3
+        },
+        {
+          "criterionId": "C6",
+          "title": "میزان پوشش تعهدات بیمه‌ای - ویزیت",
+          "maxScore": 5,
+          "measureType": "select",
+          "unit": "",
+          "value": null,
+          "optionLabel": "متوسط: تا سقف ۴ میلیون تومان",
+          "bandDescription": null,
+          "filled": true,
+          "score": 3
+        },
+        {
+          "criterionId": "C7",
+          "title": "میزان پوشش تعهدات بیمه‌ای - دندانپزشکی",
+          "maxScore": 5,
+          "measureType": "select",
+          "unit": "",
+          "value": null,
+          "optionLabel": "خوب: تا سقف ۸ میلیون تومان",
+          "bandDescription": null,
+          "filled": true,
+          "score": 5
+        },
+        {
+          "criterionId": "C8",
+          "title": "مدت‌زمان پرداخت خسارت",
+          "maxScore": 15,
+          "measureType": "count",
+          "unit": "روز",
+          "value": 29,
+          "optionLabel": null,
+          "bandDescription": "یک تا چهار هفته",
+          "filled": true,
+          "score": 10
+        }
+      ],
+      "matchedBand": {
+        "min": 60,
+        "max": null,
+        "score": 10,
+        "description": "بالای 60"
+      },
+      "finalScore": 10,
+      "weightedScore": 20,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «وضعیت خدمات بیمه تکمیلی»:\n\nمقدار محاسبه‌شده: ۷۲٪ (۷۲ از ۱۰۰ امتیاز)\nامتیاز نهایی: ۱۰ از ۱۰\nاستاندارد مطلوب: بالای ۶۰ امتیاز\n\nارزیابی وضعیت:\nعملکرد در سطح عالی و بالاتر از استاندارد مطلوب است.\n\nپیشنهادات بهبود:\nحفظ روند فعلی و مستندسازی تجربه‌های موفق برای تداوم عملکرد مطلوب توصیه می‌شود.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل ۳ امتیاز بهبود داشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_b67b9cf9-f470-4881-95b6-f1f75c1911e3",
+      "periodId": "period_7b36d59d-a034-4501-94e1-dc0d9364d85d",
+      "indicatorId": "IND06",
+      "indicatorTitle": "مشارکت کارکنان در برنامه‌های ورزشی",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-14T09:56:56.738Z",
+      "inputData": {
+        "users": 2900,
+        "employees": 7796
+      },
+      "checklistInputs": null,
+      "resultUnit": "percent",
+      "calculatedValue": 37.19856336582863,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": 30,
+        "max": null,
+        "score": 10,
+        "description": "بالای ۳۰٪"
+      },
+      "finalScore": 10,
+      "weightedScore": 20,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «مشارکت کارکنان در برنامه‌های ورزشی»:\n\nمقدار محاسبه‌شده: ۳۷.۲٪\nامتیاز نهایی: ۱۰ از ۱۰\nاستاندارد مطلوب: بالای ۳۰٪\n\nارزیابی وضعیت:\nعملکرد در سطح عالی و بالاتر از استاندارد مطلوب است.\n\nپیشنهادات بهبود:\nحفظ روند فعلی و مستندسازی تجربه‌های موفق برای تداوم عملکرد مطلوب توصیه می‌شود.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل تغییری نداشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_00460856-696e-4fb4-a85a-e7d6f22ef0dc",
+      "periodId": "period_7b36d59d-a034-4501-94e1-dc0d9364d85d",
+      "indicatorId": "IND07",
+      "indicatorTitle": "وضعیت فعالیت‌های ورزشی",
+      "indicatorType": "checklist",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-14T09:57:54.741Z",
+      "inputData": null,
+      "checklistInputs": {
+        "C1": {
+          "disciplines": "9"
+        },
+        "C2": {
+          "participants": "2900",
+          "total": "7796"
+        },
+        "C3": {
+          "rank": "15"
+        },
+        "C4": {
+          "medalPoints": "35"
+        }
+      },
+      "resultUnit": null,
+      "calculatedValue": null,
+      "percentage": 75,
+      "totalScore": 75,
+      "maxTotalScore": 100,
+      "criteriaScores": [
+        {
+          "criterionId": "C1",
+          "title": "رشته‌های ورزشی فعال",
+          "maxScore": 10,
+          "measureType": "count",
+          "unit": "رشته",
+          "value": 9,
+          "optionLabel": null,
+          "bandDescription": "بالاتر از ۵ رشته",
+          "filled": true,
+          "score": 10
+        },
+        {
+          "criterionId": "C2",
+          "title": "وضعیت ورزش همگانی",
+          "maxScore": 20,
+          "measureType": "ratio",
+          "unit": "٪",
+          "value": 37.19856336582863,
+          "optionLabel": null,
+          "bandDescription": "۳۰٪ تا ۵۰٪",
+          "filled": true,
+          "score": 10
+        },
+        {
+          "criterionId": "C3",
+          "title": "ورزش قهرمانی - جایگاه المپیاد",
+          "maxScore": 35,
+          "measureType": "count",
+          "unit": "رتبه",
+          "value": 15,
+          "optionLabel": null,
+          "bandDescription": "۱۰ تا ۲۰",
+          "filled": true,
+          "score": 20
+        },
+        {
+          "criterionId": "C4",
+          "title": "ورزش قهرمانی - امتیاز مدال‌ها",
+          "maxScore": 35,
+          "measureType": "count",
+          "unit": "امتیاز",
+          "value": 35,
+          "optionLabel": null,
+          "bandDescription": "امتیاز ۱۰ و بالاتر",
+          "filled": true,
+          "score": 35
+        }
+      ],
+      "matchedBand": {
+        "min": 70,
+        "max": null,
+        "score": 10,
+        "description": "بالای 70"
+      },
+      "finalScore": 10,
+      "weightedScore": 20,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «وضعیت فعالیت‌های ورزشی»:\n\nمقدار محاسبه‌شده: ۷۵٪ (۷۵ از ۱۰۰ امتیاز)\nامتیاز نهایی: ۱۰ از ۱۰\nاستاندارد مطلوب: بالای ۷۰ امتیاز\n\nارزیابی وضعیت:\nعملکرد در سطح عالی و بالاتر از استاندارد مطلوب است.\n\nپیشنهادات بهبود:\nحفظ روند فعلی و مستندسازی تجربه‌های موفق برای تداوم عملکرد مطلوب توصیه می‌شود.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل ۳ امتیاز بهبود داشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_033c46df-aeea-4c5a-95b2-e02d3ede7d47",
+      "periodId": "period_7b36d59d-a034-4501-94e1-dc0d9364d85d",
+      "indicatorId": "IND08",
+      "indicatorTitle": "سرانه عملکرد ورزشی",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-14T09:58:17.850Z",
+      "inputData": {
+        "sportsBudget": 125000000000,
+        "employees": 7796
+      },
+      "checklistInputs": null,
+      "resultUnit": "rial",
+      "calculatedValue": 16033863.51975372,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": null,
+        "max": 20000000,
+        "score": 1,
+        "description": "زیر ۲۰ میلیون ریال",
+        "assumed": true
+      },
+      "finalScore": 1,
+      "weightedScore": 2,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «سرانه عملکرد ورزشی»:\n\nمقدار محاسبه‌شده: ۱۶,۰۳۳,۸۶۴ ریال\nامتیاز نهایی: ۱ از ۱۰\nاستاندارد مطلوب: بالای ۵ میلیون ریال (فرضی)\n\nارزیابی وضعیت:\nعملکرد در سطح ضعیف و نیازمند اقدامات فوری اصلاحی است.\n\nپیشنهادات بهبود:\nتدوین برنامه اصلاحی فوری و اولویت‌دهی به این شاخص در دوره آتی الزامی است.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل تغییری نداشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_537971f4-bac8-4604-8b52-6ec048ae1540",
+      "periodId": "period_7b36d59d-a034-4501-94e1-dc0d9364d85d",
+      "indicatorId": "IND09",
+      "indicatorTitle": "سرانه فضای ورزشی",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-14T09:58:31.330Z",
+      "inputData": {
+        "area": 16000,
+        "employees": 7796
+      },
+      "checklistInputs": null,
+      "resultUnit": "area",
+      "calculatedValue": 2.052334530528476,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": 1,
+        "max": null,
+        "score": 10,
+        "description": "بالای ۱ مترمربع"
+      },
+      "finalScore": 10,
+      "weightedScore": 20,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «سرانه فضای ورزشی»:\n\nمقدار محاسبه‌شده: ۲.۰۵ مترمربع\nامتیاز نهایی: ۱۰ از ۱۰\nاستاندارد مطلوب: بالای ۱ مترمربع\n\nارزیابی وضعیت:\nعملکرد در سطح عالی و بالاتر از استاندارد مطلوب است.\n\nپیشنهادات بهبود:\nحفظ روند فعلی و مستندسازی تجربه‌های موفق برای تداوم عملکرد مطلوب توصیه می‌شود.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل تغییری نداشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_1aa2f617-95b0-4efb-9368-0308fba02c3e",
+      "periodId": "period_7b36d59d-a034-4501-94e1-dc0d9364d85d",
+      "indicatorId": "IND10",
+      "indicatorTitle": "بهره‌مندی کارکنان از خدمات مهدکودک",
+      "indicatorType": "direct",
+      "weight": 0,
+      "status": "submitted",
+      "submittedAt": "2026-07-14T09:58:51.839Z",
+      "inputData": {
+        "usingMothers": 30,
+        "totalMothers": 1528
+      },
+      "checklistInputs": null,
+      "resultUnit": "percent",
+      "calculatedValue": 1.963350785340314,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": null,
+        "max": 30,
+        "score": 1,
+        "description": "زیر 30"
+      },
+      "finalScore": 1,
+      "weightedScore": 0,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «بهره‌مندی کارکنان از خدمات مهدکودک»:\n\nمقدار محاسبه‌شده: ۲٪\nامتیاز نهایی: ۱ از ۱۰\nاستاندارد مطلوب: بالای ۷۰٪\n\nارزیابی وضعیت:\nعملکرد در سطح ضعیف و نیازمند اقدامات فوری اصلاحی است.\n\nپیشنهادات بهبود:\nتدوین برنامه اصلاحی فوری و اولویت‌دهی به این شاخص در دوره آتی الزامی است.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل تغییری نداشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_0b2a74ff-d936-495e-b24e-74bb336a3407",
+      "periodId": "period_7b36d59d-a034-4501-94e1-dc0d9364d85d",
+      "indicatorId": "IND11",
+      "indicatorTitle": "درصد مراکز دارای مهدکودک",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-14T09:59:06.468Z",
+      "inputData": {
+        "existing": 2,
+        "required": 4
+      },
+      "checklistInputs": null,
+      "resultUnit": "percent",
+      "calculatedValue": 50,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": 50,
+        "max": 70,
+        "score": 7,
+        "description": "50 تا 70"
+      },
+      "finalScore": 7,
+      "weightedScore": 14,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «درصد مراکز دارای مهدکودک»:\n\nمقدار محاسبه‌شده: ۵۰٪\nامتیاز نهایی: ۷ از ۱۰\nاستاندارد مطلوب: بالای ۷۰٪\n\nارزیابی وضعیت:\nعملکرد در سطح خوب اما نیازمند بهبود برای رسیدن به استاندارد مطلوب است.\n\nپیشنهادات بهبود:\nبا تقویت برنامه‌ریزی و تخصیص منابع بیشتر می‌توان به استاندارد مطلوب دست یافت.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل تغییری نداشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_d4eb055d-0fe7-4583-b153-fa47ab2fede7",
+      "periodId": "period_7b36d59d-a034-4501-94e1-dc0d9364d85d",
+      "indicatorId": "IND12",
+      "indicatorTitle": "وضعیت پایش سلامت کارکنان",
+      "indicatorType": "checklist",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-14T09:59:38.959Z",
+      "inputData": null,
+      "checklistInputs": {
+        "C1": {
+          "option": "established"
+        },
+        "C2": {
+          "records": "5950",
+          "total": "7796"
+        },
+        "C3": {
+          "programs": "6"
+        }
+      },
+      "resultUnit": null,
+      "calculatedValue": null,
+      "percentage": 100,
+      "totalScore": 100,
+      "maxTotalScore": 100,
+      "criteriaScores": [
+        {
+          "criterionId": "C1",
+          "title": "تشکیل کمیته سلامت کارکنان",
+          "maxScore": 20,
+          "measureType": "select",
+          "unit": "",
+          "value": null,
+          "optionLabel": "تشکیل شده",
+          "bandDescription": null,
+          "filled": true,
+          "score": 20
+        },
+        {
+          "criterionId": "C2",
+          "title": "تشکیل پرونده سلامت کارکنان",
+          "maxScore": 50,
+          "measureType": "ratio",
+          "unit": "٪",
+          "value": 76.3211903540277,
+          "optionLabel": null,
+          "bandDescription": "بالای ۵۰٪",
+          "filled": true,
+          "score": 50
+        },
+        {
+          "criterionId": "C3",
+          "title": "تعداد سنجش‌های سلامت",
+          "maxScore": 30,
+          "measureType": "count",
+          "unit": "برنامه",
+          "value": 6,
+          "optionLabel": null,
+          "bandDescription": "بالاتر از ۴ برنامه",
+          "filled": true,
+          "score": 30
+        }
+      ],
+      "matchedBand": {
+        "min": 75,
+        "max": null,
+        "score": 10,
+        "description": "بالای 75"
+      },
+      "finalScore": 10,
+      "weightedScore": 20,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «وضعیت پایش سلامت کارکنان»:\n\nمقدار محاسبه‌شده: ۱۰۰٪ (۱۰۰ از ۱۰۰ امتیاز)\nامتیاز نهایی: ۱۰ از ۱۰\nاستاندارد مطلوب: بالای ۷۵٪\n\nارزیابی وضعیت:\nعملکرد در سطح عالی و بالاتر از استاندارد مطلوب است.\n\nپیشنهادات بهبود:\nحفظ روند فعلی و مستندسازی تجربه‌های موفق برای تداوم عملکرد مطلوب توصیه می‌شود.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل تغییری نداشته است.",
+      "notes": ""
+    },
+    {
+      "id": "sub_b93e9adc-de66-4cb4-ac23-7e7fc74bf149",
+      "periodId": "period_7b36d59d-a034-4501-94e1-dc0d9364d85d",
+      "indicatorId": "IND13",
+      "indicatorTitle": "وضعیت تخصیص تسهیلات مسکن",
+      "indicatorType": "direct",
+      "weight": 2,
+      "status": "submitted",
+      "submittedAt": "2026-07-14T09:59:59.646Z",
+      "inputData": {
+        "units": 0,
+        "employees": 7796
+      },
+      "checklistInputs": null,
+      "resultUnit": "percent",
+      "calculatedValue": 0,
+      "percentage": null,
+      "totalScore": null,
+      "maxTotalScore": null,
+      "criteriaScores": null,
+      "matchedBand": {
+        "min": null,
+        "max": 10,
+        "score": 1,
+        "description": "زیر ۱۰٪"
+      },
+      "finalScore": 1,
+      "weightedScore": 2,
+      "expertAnalysis": "تحلیل کارشناسی شاخص «وضعیت تخصیص تسهیلات مسکن»:\n\nمقدار محاسبه‌شده: ۰٪\nامتیاز نهایی: ۱ از ۱۰\nاستاندارد مطلوب: بالای ۵۰٪\n\nارزیابی وضعیت:\nعملکرد در سطح ضعیف و نیازمند اقدامات فوری اصلاحی است.\n\nپیشنهادات بهبود:\nتدوین برنامه اصلاحی فوری و اولویت‌دهی به این شاخص در دوره آتی الزامی است.\n\nمقایسه با دوره قبل:\nنسبت به دوره قبل تغییری نداشته است.",
+      "notes": ""
+    }
+  ]
+}
