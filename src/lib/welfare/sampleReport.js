@@ -5,7 +5,7 @@
  * structured, chart-ready report: per-period scores/rows, cross-period trends,
  * and computed insights. No localStorage, no React — safe to unit-test.
  */
-import { INDICATORS } from './indicators';
+import { INDICATORS, SCORE_LEVELS } from './indicators';
 import { calcOverallPeriodScore, calcAverageScore } from './calculations';
 import { tryParse } from './deviceData';
 
@@ -92,4 +92,71 @@ export function indicatorTrend(report, indicatorId) {
     name: p.title,
     score: p.rows.find((r) => r.ind.id === indicatorId)?.score ?? null,
   }));
+}
+
+/**
+ * How many indicators landed at each score level (10/7/4/1), per period.
+ * Shaped for a stacked bar chart: { name, s10, s7, s4, s1 }.
+ */
+export function scoreDistribution(report) {
+  return report.periods.map((p) => {
+    const row = { name: p.title };
+    SCORE_LEVELS.forEach((lvl) => {
+      row[`s${lvl}`] = 0;
+    });
+    p.rows.forEach((r) => {
+      if (r.score != null && SCORE_LEVELS.includes(r.score)) row[`s${r.score}`] += 1;
+    });
+    return row;
+  });
+}
+
+/**
+ * Weighted contribution (weight × score) per indicator for one period, biggest
+ * first — shows which indicators actually drive the overall score. Uses the
+ * submission's own weight when present, matching the overall-score formula.
+ */
+export function weightedContribution(period) {
+  if (!period) return [];
+  return period.rows
+    .map((r) => {
+      const weight = r.sub?.weight ?? r.ind.weight ?? 0;
+      const score = r.score ?? 0;
+      return {
+        code: r.ind.code,
+        fullName: r.ind.title,
+        weight,
+        score,
+        weighted: score * weight,
+        gap: 10 - score, // headroom to a perfect score
+      };
+    })
+    .sort((a, b) => b.weighted - a.weighted);
+}
+
+/** Indicator-by-indicator comparison of two periods, plus ranked gains/losses. */
+export function comparePeriods(report, aId, bId) {
+  const a = report.periods.find((p) => p.id === aId) || null;
+  const b = report.periods.find((p) => p.id === bId) || null;
+  if (!a || !b) return { a, b, rows: [], gains: [], losses: [] };
+
+  const rows = INDICATORS.map((ind) => {
+    const scoreA = a.rows.find((r) => r.ind.id === ind.id)?.score ?? null;
+    const scoreB = b.rows.find((r) => r.ind.id === ind.id)?.score ?? null;
+    return {
+      ind,
+      scoreA,
+      scoreB,
+      delta: scoreA != null && scoreB != null ? scoreB - scoreA : null,
+    };
+  });
+
+  const moved = rows.filter((r) => r.delta != null && r.delta !== 0);
+  return {
+    a,
+    b,
+    rows,
+    gains: moved.filter((r) => r.delta > 0).sort((x, y) => y.delta - x.delta),
+    losses: moved.filter((r) => r.delta < 0).sort((x, y) => x.delta - y.delta),
+  };
 }

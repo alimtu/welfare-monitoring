@@ -30,9 +30,20 @@ import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '@
 import { ScoreBadge } from '@/components/welfare/ScoreBadge';
 import { StatCard } from '@/components/welfare/StatCard';
 import { IndicatorsRadar } from '@/components/welfare/IndicatorsRadar';
+import { ScoreHeatmap } from '@/components/welfare/report/ScoreHeatmap';
+import { IndicatorRanking } from '@/components/welfare/report/IndicatorRanking';
+import { ScoreDistributionChart } from '@/components/welfare/report/ScoreDistributionChart';
+import { WeightedContributionChart } from '@/components/welfare/report/WeightedContributionChart';
+import { PeriodComparison } from '@/components/welfare/report/PeriodComparison';
+import { IndicatorDetails } from '@/components/welfare/report/IndicatorDetails';
 import { INDICATORS, TOTAL_INDICATORS } from '@/lib/welfare/indicators';
 import { SAMPLE_DATASET } from '@/lib/welfare/sampleData';
-import { buildReport, indicatorTrend } from '@/lib/welfare/sampleReport';
+import {
+  buildReport,
+  indicatorTrend,
+  scoreDistribution,
+  weightedContribution,
+} from '@/lib/welfare/sampleReport';
 import {
   toPersianDigits,
   formatNumber,
@@ -92,6 +103,8 @@ export default function PublicReportPage() {
     [period],
   );
   const indTrend = useMemo(() => indicatorTrend(report, indId), [report, indId]);
+  const distribution = useMemo(() => scoreDistribution(report), [report]);
+  const contribution = useMemo(() => weightedContribution(period), [period]);
   const selectedIndicator = INDICATORS.find((i) => i.id === indId);
 
   const overallMeta = period ? scoreMeta(Math.round(period.overall) || 0) : null;
@@ -206,6 +219,51 @@ export default function PublicReportPage() {
         )}
       </div>
 
+      {/* ── Heatmap: every indicator × every period ─────────────────── */}
+      <Card className="break-inside-avoid">
+        <CardHeader>
+          <CardTitle className="text-sm">نمای کلی شاخص‌ها در دوره‌ها</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ScoreHeatmap periods={report.periods} />
+        </CardContent>
+      </Card>
+
+      {/* ── Ranking across all periods ──────────────────────────────── */}
+      <Card className="break-inside-avoid">
+        <CardHeader>
+          <CardTitle className="text-sm">رتبه‌بندی شاخص‌ها</CardTitle>
+        </CardHeader>
+        <CardContent className="px-0">
+          <IndicatorRanking stats={report.indicatorStats} />
+        </CardContent>
+      </Card>
+
+      {/* ── Score-level distribution ────────────────────────────────── */}
+      <Card className="break-inside-avoid">
+        <CardHeader>
+          <CardTitle className="text-sm">توزیع سطح امتیازها</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ScoreDistributionChart data={distribution} />
+          <p className="mt-1 text-[10px] text-grey-400">
+            تعداد شاخص‌ها در هر سطح امتیاز (۱۰ / ۷ / ۴ / ۱) به تفکیک دوره.
+          </p>
+        </CardContent>
+      </Card>
+
+      {/* ── Compare two periods ─────────────────────────────────────── */}
+      {report.periods.length >= 2 && (
+        <Card className="break-inside-avoid">
+          <CardHeader>
+            <CardTitle className="text-sm">مقایسه دو دوره</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <PeriodComparison report={report} />
+          </CardContent>
+        </Card>
+      )}
+
       {/* ── Period drill-down ───────────────────────────────────────── */}
       <Card className="break-inside-avoid">
         <CardHeader className="flex flex-col gap-3">
@@ -280,6 +338,12 @@ export default function PublicReportPage() {
                 <IndicatorsRadar data={radarData} />
               </div>
 
+              {/* What actually drives the overall score */}
+              <div>
+                <p className="mb-1 text-xs font-medium text-grey-600">محرک‌های امتیاز (وزن × امتیاز)</p>
+                <WeightedContributionChart data={contribution} />
+              </div>
+
               {/* Table */}
               <div className="overflow-x-auto">
                 <Table>
@@ -310,6 +374,15 @@ export default function PublicReportPage() {
                     ))}
                   </TableBody>
                 </Table>
+              </div>
+
+              {/* Expandable per-indicator analysis */}
+              <div>
+                <p className="mb-1 text-xs font-medium text-grey-600">جزئیات و تحلیل کارشناسی</p>
+                <p className="mb-2 text-[10px] text-grey-400">
+                  برای دیدن دلیل امتیاز، ریز معیارها و تحلیل، روی هر شاخص بزنید.
+                </p>
+                <IndicatorDetails rows={period.rows} />
               </div>
             </>
           )}
